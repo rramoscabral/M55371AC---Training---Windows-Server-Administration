@@ -236,10 +236,10 @@ This module describes how to implement virtual private networks (VPNs), Network 
 <br/>
 
 After completing this module, students will be able to:
- Describe VPN options in Windows Server.
- Describe Always On VPN functionality.
- Describe and configure NPS.
- Describe and configure Web Server (IIS).
+- Describe VPN options in Windows Server.
+- Describe Always On VPN functionality.
+- Describe and configure NPS.
+- Describe and configure Web Server (IIS).
 
 ### Lessons
 - Implementing VPNs
