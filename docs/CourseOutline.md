@@ -19,7 +19,7 @@ After completing this module, students will be able to:
 - Windows Server administration principles and tools overview
 
 
-###Lab 1: Deploying and configuring Windows Server
+### Lab 1: Deploying and configuring Windows Server
 - Deploying and configuring Server Core
 - Implementing and using remote server administration
 
