@@ -14,9 +14,9 @@ After completing this module, students will be able to:
 
 
 ### Lessons
+- Overview of Windows Server administration principles and tools
 - Introducing Windows Server
-- Windows Server Core Overview
-- Windows Server administration principles and tools overview
+- Overview of Windows Server Core
 
 
 ### Lab 1: Deploying and configuring Windows Server
@@ -36,12 +36,15 @@ After completing this module, students will be able to:
 - Deploy domain controllers in AD DS.
 - Describe Azure AD and benefits of integrating Azure AD with AD DS
 
+
+
 ### Lessons
-- AD DS Overview
+- Overview of AD DS
 - Deploying Windows Server domain controllers
-- Azure AD overview
+- Overview of Microsoft Entra ID
 - Implementing Group Policy
-- Active Directory Certificate Services overview
+- Overview of AD CS
+
 
 
 ### Lab 1: Implementing Identity Services and Group Policy
