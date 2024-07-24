@@ -38,7 +38,7 @@ After completing this module, students will be able to:
 
 
 - [Active Directory Replication Concepts](https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/get-started/replication/active-directory-replication-concepts)
-- [Well-known Security Identifiers (SIDs)](https://learn.microsoft.com/en-us/windows/win32/secauthz/well-known-sids)
+ <br> -  [Well-known Security Identifiers (SIDs)](https://learn.microsoft.com/en-us/windows/win32/secauthz/well-known-sids)
 
 
 
@@ -50,8 +50,26 @@ After completing this module, students will be able to:
 - [Upgrade and conversion options for Windows Server](https://learn.microsoft.com/en-us/windows-server/get-started/upgrade-conversion-options#upgrading-licensed-versions-of-windows-server
 
 |
-| Overview of Microsoft Entra ID | |
-| Implementing Group Policy | |
+| Overview of Microsoft Entra ID | 
+
+- [Microsoft Entra ID](https://www.microsoft.com/en-us/security/business/identity-access/microsoft-entra-id)
+ <br> - [Microsoft Entra Plans & Pricing](https://www.microsoft.com/en-us/security/business/microsoft-entra-pricing)
+ <br> - [What is Microsoft Entra Connect?](https://learn.microsoft.com/en-us/entra/identity/hybrid/connect/whatis-azure-ad-connect)
+ <br> - [Add or sync users to Microsoft Entra ID](https://setup.cloud.microsoft/entra/add-or-sync-users-to-microsoft-entra-id)
+
+
+
+|
+| Implementing Group Policy | 
+
+- Administrative Templates (.admx) for Windows 10 October 2020 Update (20H2)](https://www.microsoft.com/en-us/download/details.aspx?id=102157)
+ <br> - Administrative Template files (ADMX/ADML) and Office Customization Tool for Microsoft 365 Apps for enterprise, Office 2019, and Office 2016](https://www.microsoft.com/en-us/download/details.aspx?id=49030)
+
+
+
+
+|
+
 | Overview of AD CS | | 
 
 
