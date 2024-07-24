@@ -1,5 +1,3 @@
-
-
 # Training Notes
 
 <br/>
@@ -13,89 +11,37 @@
 | Overview of Windows Server Core | - [Roles, Role Services, and Features not in Windows Server - Server Core](https://docs.microsoft.com/en-us/windows-server/administration/server-core/server-core-removed-roles) <br> - [Roles, Role Services, and Features included in Windows Server - Server Core](https://docs.microsoft.com/en-us/windows-server/administration/server-core/server-core-roles-and-services) |
 
 
-### Lab 1: Deploying and configuring Windows Server
-- Deploying and configuring Server Core
-- Implementing and using remote server administration
-
-
 <br/>
 
 ## Module 2: Identity Services in Windows Server
 
-After completing this module, students will be able to:
-- Describe AD DS in a Windows Server environment.
-- Deploy domain controllers in AD DS.
-- Describe Azure AD and benefits of integrating Azure AD with AD DS
-
-### Lessons
-
 | Lessons | Notes | 
 | --- | --- |
-| 
+| Overview of AD DS | - [Active Directory Replication Concepts](https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/get-started/replication/active-directory-replication-concepts) <br> -  [Well-known Security Identifiers (SIDs)](https://learn.microsoft.com/en-us/windows/win32/secauthz/well-known-sids) |
+| Deploying Windows Server domain controllers | - [Upgrade and conversion options for Windows Server](https://learn.microsoft.com/en-us/windows-server/get-started/upgrade-conversion-options#upgrading-licensed-versions-of-windows-server) |
+| Overview of Microsoft Entra ID | - [Microsoft Entra ID](https://www.microsoft.com/en-us/security/business/identity-access/microsoft-entra-id) <br> - [Microsoft Entra Plans & Pricing](https://www.microsoft.com/en-us/security/business/microsoft-entra-pricing) <br> - [What is Microsoft Entra Connect?](https://learn.microsoft.com/en-us/entra/identity/hybrid/connect/whatis-azure-ad-connect) <br> - [Add or sync users to Microsoft Entra ID](https://setup.cloud.microsoft/entra/add-or-sync-users-to-microsoft-entra-id) |
+| Implementing Group Policy | - [Administrative Templates (.admx) for Windows 10 October 2020 Update (20H2)](https://www.microsoft.com/en-us/download/details.aspx?id=102157) <br> - [Administrative Template files (ADMX/ADML) and Office Customization Tool for Microsoft 365 Apps for enterprise, Office 2019, and Office 2016](https://www.microsoft.com/en-us/download/details.aspx?id=49030)|
+| Overview of AD CS | - [Server Certificate Deployment](https://docs.microsoft.com/en-us/windows-server/networking/core-network-guide/cncg/server-certs/server-certificate-deployment)  | 
 
 
-| Overview of AD DS | 
-
-
-- [Active Directory Replication Concepts](https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/get-started/replication/active-directory-replication-concepts)
- <br> -  [Well-known Security Identifiers (SIDs)](https://learn.microsoft.com/en-us/windows/win32/secauthz/well-known-sids)
-
-
-
-|
-
-
-| Deploying Windows Server domain controllers | 
-
-- [Upgrade and conversion options for Windows Server](https://learn.microsoft.com/en-us/windows-server/get-started/upgrade-conversion-options#upgrading-licensed-versions-of-windows-server
-
-|
-| Overview of Microsoft Entra ID | 
-
-- [Microsoft Entra ID](https://www.microsoft.com/en-us/security/business/identity-access/microsoft-entra-id)
- <br> - [Microsoft Entra Plans & Pricing](https://www.microsoft.com/en-us/security/business/microsoft-entra-pricing)
- <br> - [What is Microsoft Entra Connect?](https://learn.microsoft.com/en-us/entra/identity/hybrid/connect/whatis-azure-ad-connect)
- <br> - [Add or sync users to Microsoft Entra ID](https://setup.cloud.microsoft/entra/add-or-sync-users-to-microsoft-entra-id)
-
-
-
-|
-| Implementing Group Policy | 
-
-- Administrative Templates (.admx) for Windows 10 October 2020 Update (20H2)](https://www.microsoft.com/en-us/download/details.aspx?id=102157)
- <br> - Administrative Template files (ADMX/ADML) and Office Customization Tool for Microsoft 365 Apps for enterprise, Office 2019, and Office 2016](https://www.microsoft.com/en-us/download/details.aspx?id=49030)
-
-
-
-
-|
-
-| Overview of AD CS | | 
-
-
-
-
-
-## Module 3: Network Infrastructure services in Windows Server
-This module describes how to implement core network infrastructure services in Windows Server. The modules covers how to deploy, configure and manage DNS and IPAM. The modules also describes how to use Remote Access Services.
 
 <br/>
 
-After completing this module, students will be able to:
-- Describe, deploy and configure DHCP service.
-- Deploy, configure and manage DNS.
-- Describe, deploy and manage IPAM.
+## Module 3: Network Infrastructure services in Windows Server
 
-###  Lessons
-- Deploying and managing DHCP
-- Deploying and managing DNS service
-- Deploying and managing IPAM
-- Remote Access Services in Windows Server
+| Lessons | Notes | 
+| --- | --- |
+| Deploying and managing DHCP | |
+| Deploying and managing DNS service |
 
-### Lab 1: Implementing and configuring network infrastructure services in Windows Server
-- Deploying and configuring DHCP
-- Deploying and configuring DNS
-- Implementing Web Application Proxy
+- [PowerShell DnsServer](https://docs.microsoft.com/en-us/powershell/module/dnsserver)
+
+| Deploying and managing IPAM
+| Remote Access Services in Windows Server
+
+
+
+<br/>
 
 
 ## Module 4: File Servers and Storage management in Windows Server
