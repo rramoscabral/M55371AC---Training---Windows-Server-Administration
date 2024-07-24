@@ -8,12 +8,12 @@
 
 | Lessons | Notes |
 | --- | ---
-|  Introducing Windows Server
-| Windows Server Core Overview
-| Windows Server administration principles and tools overview
+| Overview of Windows Server administration principles and tools | [Windows Admin Center](https://www.microsoft.com/en-us/windows-server/windows-admin-center)  |
+| Introducing Windows Server | - [Pricing and licensing overview](https://www.microsoft.com/en-us/windows-server/pricing) <br> - [Comparison of Windows Server editions](https://learn.microsoft.com/en-us/windows-server/get-started/editions-comparison)   <br> - [Microsoft Deployment Toolkit (MDT)](https://www.microsoft.com/en-us/download/details.aspx?id=54259) <br> - [Get started with MDT](https://docs.microsoft.com/en-us/windows/deployment/deploy-windows-mdt/get-started-with-the-microsoft-deployment-toolkit) <br> - [Microsoft Assessment and Planning Toolkit](https://docs.microsoft.com/en-us/previous-versions//bb977556(v=technet.10)) <br> - [Windows Server servicing channels](https://learn.microsoft.com/en-us/windows-server/get-started/servicing-channels-comparison) <br> - [Key Management Services (KMS) client activation and product keys](https://learn.microsoft.com/en-us/windows-server/get-started/kms-client-activation-keys) |
+| Overview of Windows Server Core | - [Roles, Role Services, and Features not in Windows Server - Server Core](https://docs.microsoft.com/en-us/windows-server/administration/server-core/server-core-removed-roles) <br> - [Roles, Role Services, and Features included in Windows Server - Server Core](https://docs.microsoft.com/en-us/windows-server/administration/server-core/server-core-roles-and-services) |
 
 
-###Lab 1: Deploying and configuring Windows Server
+### Lab 1: Deploying and configuring Windows Server
 - Deploying and configuring Server Core
 - Implementing and using remote server administration
 
@@ -31,14 +31,32 @@ After completing this module, students will be able to:
 
 | Lessons | Notes | 
 | --- | --- |
-| AD DS Overview |   - [Resource forest concepts and features for Azure Active Directory Domain Services](https://learn.microsoft.com/en-us/entra/identity/domain-services/concepts-forest-trust) |
-| Deploying Windows Server domain controllers | --- | 
-| Azure AD overview | - [Features and licenses for Microsoft Entra multifactor authentication](https://learn.microsoft.com/en-us/entra/identity/authentication/concept-mfa-licensing#feature-comparison-of-versions) <br> - [Microsoft Entra Plans & Pricing](https://www.microsoft.com/en-us/security/business/microsoft-entra-pricing)
-| Implementing Group Policy | --- |
-| Active Directory Certificate Services overview | --- |
+| 
 
 
-<br/>
+| Overview of AD DS | 
+
+
+- [Active Directory Replication Concepts](https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/get-started/replication/active-directory-replication-concepts)
+- [Well-known Security Identifiers (SIDs)](https://learn.microsoft.com/en-us/windows/win32/secauthz/well-known-sids)
+
+
+
+|
+
+
+| Deploying Windows Server domain controllers | 
+
+- [Upgrade and conversion options for Windows Server](https://learn.microsoft.com/en-us/windows-server/get-started/upgrade-conversion-options#upgrading-licensed-versions-of-windows-server
+
+|
+| Overview of Microsoft Entra ID | |
+| Implementing Group Policy | |
+| Overview of AD CS | | 
+
+
+
+
 
 ## Module 3: Network Infrastructure services in Windows Server
 This module describes how to implement core network infrastructure services in Windows Server. The modules covers how to deploy, configure and manage DNS and IPAM. The modules also describes how to use Remote Access Services.
