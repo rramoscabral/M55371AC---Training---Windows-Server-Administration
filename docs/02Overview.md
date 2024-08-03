@@ -1,17 +1,36 @@
+---
+layout: default
+title: 'Course Syllabus'
+nav_order: 2
+has_children: false
+---
+
+# Course Overview
+{: .no_toc }
+
+
+## Table of contents
+{: .no_toc .text-delta }
+
+1. TOC
+{:toc}
+
+<br/>
+
+---
 
 ## Course Overview
 
-The Course **55371AC** is developed by the **Microsoft Community** and replace the retired Microsoft course **Windows Server 2019 Administration (WS-011T00)**.
+The Course **M55371AC** is developed by the **Microsoft Community** and replace the retired Microsoft course **Windows Server 2019 Administration (WS-011T00)**.
 
 This five-day instructor-led course is designed primarily for IT professionals who will be responsible for managing identity, networking, storage and compute by using Windows Server, and who need to understand the scenarios, requirements, and options that are available and applicable to Windows Server. 
 
 The course teaches IT professionals the fundamental administration skills required to deploy and support Windows Server in most organizations.
 
 
-
-| Duration | Level | Exam |
-| --- | --- | --- |
-| 5 days |  Intermediate | Not certifying |
+|  Level        | Product                                | Role                  | Course Duration  |  Exam | 
+| :---:         | :---:                                  | :---:                 | :---:            | :---: 
+|  Intermediate | Microsoft Windows Server               | System Administrator  | 5 days           | Not certifying |
 
 
 
@@ -44,8 +63,6 @@ The Windows Server Administration 55371AC Training Course offers comprehensive k
 - IT Professionals who have some experiencing working with Windows Server and are looking for covering core administration components and technologies in Windows Server.
 - Server administrators from previous Windows Server versions to update their knowledge and skills related to Windows Server.
 . Individuals from a service desk role who wish to transition into server maintenance
-
-
 
 
 
