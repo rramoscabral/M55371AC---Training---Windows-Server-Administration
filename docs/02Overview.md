@@ -1,6 +1,6 @@
 ---
 layout: default
-title: 'Course Syllabus'
+title: 'Course Overview'
 nav_order: 2
 has_children: false
 ---
@@ -19,7 +19,7 @@ has_children: false
 
 ---
 
-## Course Overview
+## **Course Overview**
 
 The Course **M55371AC** is developed by the **Microsoft Community** and replace the retired Microsoft course **Windows Server 2019 Administration (WS-011T00)**.
 
@@ -34,7 +34,7 @@ The course teaches IT professionals the fundamental administration skills requir
 
 
 
-### Course Objectives
+### **Course Objectives**
 
 - To learn the core concepts of Windows Server Administration
 - To understand how to configure and manage server environments
@@ -45,7 +45,7 @@ The course teaches IT professionals the fundamental administration skills requir
 Upon completion of this training, delegates will be well-equipped to manage and administer Windows Server environments effectively. This course not only enhances their professional skill set but also prepares them for Microsoft Certifications, ensuring they are capable of handling complex server administration tasks efficiently.
 
 
-### Who should attend this Windows Server Administration 55371AC Course?
+### **Who should attend this Windows Server Administration 55371AC Course?**
 
 The Windows Server Administration 55371AC Training Course offers comprehensive knowledge on managing and maintaining a Windows Server environment. It covers detailed server management tasks including installation, configuration, monitoring, and troubleshooting. This course can be helpful for various professionals, including:
 
@@ -59,14 +59,14 @@ The Windows Server Administration 55371AC Training Course offers comprehensive k
 - Infrastructure Engineers
 
 
-### Participant profiles 
+### **Participant profiles **
 - IT Professionals who have some experiencing working with Windows Server and are looking for covering core administration components and technologies in Windows Server.
 - Server administrators from previous Windows Server versions to update their knowledge and skills related to Windows Server.
 . Individuals from a service desk role who wish to transition into server maintenance
 
 
 
-## Prerequisites of the Windows Server Administration 55371AC Course
+## **Prerequisites of the Windows Server Administration 55371AC Course**
 
 - Some exposure to and experience with Active Directory Domain Services (AD DS) concepts and technologies in Windows Server.
 - Experience and an understanding of core networking technologies such as IP addressing, name resolution, and Dynamic Host Configuration Protocol (DHCP).

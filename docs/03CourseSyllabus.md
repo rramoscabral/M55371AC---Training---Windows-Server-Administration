@@ -31,13 +31,17 @@ After completing this module, students will be able to:
 - Describe Windows Server Core, its specifics and ways to administer it.
 
 
-### Lessons
+<br/>
+
+**Lessons**
 - Overview of Windows Server administration principles and tools
 - Introducing Windows Server
 - Overview of Windows Server Core
 
 
-### Lab 1: Deploying and configuring Windows Server
+<br/>
+
+**Lab 1: Deploying and configuring Windows Server**
 - Deploying and configuring Server Core
 - Implementing and using remote server administration
 
@@ -56,7 +60,9 @@ After completing this module, students will be able to:
 
 
 
-### Lessons
+<br/>
+
+**Lessons**
 - Overview of AD DS
 - Deploying Windows Server domain controllers
 - Overview of Microsoft Entra ID
@@ -65,7 +71,9 @@ After completing this module, students will be able to:
 
 
 
-### Lab 1: Implementing Identity Services and Group Policy
+<br/>
+
+**Lab 1: Implementing Identity Services and Group Policy**
 - Deploying new domain controller on Server Core
 - Configuring Group Policy
 - Deploying and using certificate services
@@ -85,13 +93,17 @@ After completing this module, students will be able to:
 - Deploy, configure and manage DNS.
 - Describe, deploy and manage IPAM.
 
-###  Lessons
+<br/>
+
+**Lessons**
 - Deploying and managing DHCP
 - Deploying and managing DNS service
 - Deploying and managing IPAM
 - Remote Access Services in Windows Server
 
-### Lab 1: Implementing and configuring network infrastructure services in Windows Server
+<br/>
+
+**Lab 1: Implementing and configuring network infrastructure services in Windows Server**
 - Deploying and configuring DHCP
 - Deploying and configuring DNS
 - Implementing Web Application Proxy
@@ -109,7 +121,9 @@ After completing this module, students will be able to:
 - Implement iSCSI based storage
 - Deploy and manage Distributed File System (DFS)
 
-### Lessons
+<br/>
+
+**Lessons**
 - Volumes and File Systems in Windows Server
 - Implementing sharing in Windows Server
 - Implementing Storage Spaces in Windows Server
@@ -117,7 +131,9 @@ After completing this module, students will be able to:
 - Implementing iSCSI
 - Deploying Distributed File System
 
-### Lab 1: Implementing storage solutions in Windows Server
+<br/>
+
+**Lab 1: Implementing storage solutions in Windows Server**
 - Implementing Data Deduplication
 - Configuring iSCSI storage
 - Configuring redundant storage spaces
@@ -138,14 +154,18 @@ After completing this module, students will be able to:
 - Describe and deploy containers in Windows Server.
 - Explain the use of Kubernetes on Windows.
 
-### Lessons
+<br/>
+
+**Lessons**
 - Hyper-V in Windows Server
 - Configuring VMs
 - Securing virtualization in Windows Server
 - Containers in Windows Server
 - Overview of Kubernetes
 
-### Lab 1: Implementing and configuring virtualization in Windows Server
+<br/>
+
+**Lab 1: Implementing and configuring virtualization in Windows Server**
 - Creating and configuring VMs
 - Installing and configuring containers
 
@@ -165,13 +185,17 @@ After completing this module, students will be able to:
 - Describe options to achieve high availability with Hyper-V VMs.
 
   
-### Lessons
+<br/>
+
+**Lessons**
 - Planning for failover clustering implementation
 - Creating and configuring failover cluster
 - Overview of stretch clusters
 - High availability and disaster recovery solutions with Hyper-V VMs
 
-### Lab 1: Implementing failover clustering
+<br/>
+
+**Lab 1: Implementing failover clustering**
 - Configuring storage and creating a cluster
 - Deploying and configuring a highly available file server
 - Validating the deployment of the highly available file server
@@ -189,12 +213,16 @@ After completing this module, students will be able to:
 - Describe and implement Windows Server backup.
 - Describe the Azure Backup service.
 
-### Lessons
+<br/>
+
+**Lessons**
 - Hyper-V Replica
 - Backup and restore infrastructure in Windows Server
 
 
-### Lab 1: Implementing Hyper-V Replica and Windows Server Backup
+<br/>
+
+**Lab 1: Implementing Hyper-V Replica and Windows Server Backup**
 - Implementing Hyper-V Replica
 - Implementing backup and restore with Windows Server Backup
 
@@ -214,14 +242,18 @@ After completing this module, students will be able to:
 - Secure SMB traffic in Windows Server.
 - Describe Windows Update and its deployment and management options
 
-### Lessons
+<br/>
+
+**Lessons**
 - Credentials and privileged access protection
 - Hardening Windows Server
 - JEA in Windows Server
 - Securing and analyzing SMB traffic
 - Windows Server update management
 
-#### Lab 1: Configuring security in Windows Server
+#<br/>
+
+**Lab 1: Configuring security in Windows Server**
 - Configuring Windows Defender Credential Guard
 - Locating problematic accounts
 - Implementing LAPS
@@ -238,12 +270,16 @@ After completing this module, students will be able to:
 - Describe and deploy session-based desktops.
 - Describe personal and pooled virtual desktops.
 
-### Lessons
+<br/>
+
+**Lessons**
 - Overview of RDS
 - Configuring a session-based desktop deployment
 - Overview of personal and pooled virtual desktops
 
-### Lab 1: Implementing RDS in Windows Server
+<br/>
+
+**Lab 1: Implementing RDS in Windows Server**
 - Implementing RDS
 - Configuring Session Collection Settings and using RDC
 - Configuring a virtual desktop template
@@ -262,14 +298,18 @@ After completing this module, students will be able to:
 - Describe and configure NPS.
 - Describe and configure Web Server (IIS).
 
-### Lessons
+<br/>
+
+**Lessons**
 - Implementing VPNs
 - Implementing Always On VPN
 - Implementing NPS
 - Implementing Web Server in Windows Server
 
 
-### Lab 1: Deploying network workloads
+<br/>
+
+**Lab 1: Deploying network workloads**
 - Implementing VPN in Windows Server
 - Deploying and Configuring Web Server
 
@@ -286,12 +326,16 @@ After completing this module, students will be able to:
 - Describe performance monitoring and use it in Windows Server.
 - Describe event logging and perform event logging monitoring for troubleshooting purposes
 
-### Lessons
+<br/>
+
+**Lessons**
 - Overview of Windows Server monitoring tools
 - Using Performance Monitor
 - Monitoring event logs for troubleshooting
 
-### Lab 1: Monitoring and troubleshooting Windows Server
+<br/>
+
+**Lab 1: Monitoring and troubleshooting Windows Server**
 - Establishing a performance baseline
 - Identifying the source of a performance problem
 
@@ -306,10 +350,14 @@ After completing this module, students will be able to:
 - Describe the Storage Migration Service.
 - Describe Windows Server migration tools and their usage scenarios
 
-### Lessons
+<br/>
+
+**Lessons**
 - AD DS migration
 - Storage Migration Service
 - Windows Server migration tools
 
-### Lab 1: Migrating Server workloads
+<br/>
+
+**Lab 1: Migrating Server workloads**
 - Implementing Storage Migration Service

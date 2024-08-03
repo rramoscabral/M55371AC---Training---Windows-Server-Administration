@@ -1,11 +1,11 @@
 ---
 layout: default
-title: 'Demos'
+title: 'Trainer References'
 nav_order: 5
 has_children: false
 ---
 
-# Training References
+# Trainer References
 {: .no_toc }
 
 
@@ -25,7 +25,7 @@ has_children: false
 
 | Lessons | Notes |
 | --- | ---
-| Overview of Windows Server administration principles and tools | - [Windows Admin Center](https://www.microsoft.com/en-us/windows-server/windows-admin-center)  |
+| Overview of Windows Server administration principles and tools | - [Windows Admin Center](https://www.microsoft.com/en-us/windows-server/windows-admin-center) - <br> - [Windows Admin Center Installation Types](https://learn.microsoft.com/en-us/windows-server/manage/windows-admin-center/plan/installation-options#installation-types) |
 | Introducing Windows Server | - [Pricing and licensing overview](https://www.microsoft.com/en-us/windows-server/pricing) <br> - [Comparison of Windows Server editions](https://learn.microsoft.com/en-us/windows-server/get-started/editions-comparison)  <br> - [What's new in Windows Server 2016](https://learn.microsoft.com/en-us/windows-server/get-started/whats-new-in-windows-server-2016) <br> - [What's new in Windows Server 2019](https://learn.microsoft.com/en-us/windows-server/get-started/whats-new-in-windows-server-2019) <br> - [What's new in Windows Server 2022](https://learn.microsoft.com/en-us/windows-server/get-started/whats-new-in-windows-server-2022) <br> - [What's new in Windows Server 2025 (preview)](https://learn.microsoft.com/en-us/windows-server/get-started/whats-new-windows-server-2025) <br> - [Microsoft Deployment Toolkit (MDT)](https://www.microsoft.com/en-us/download/details.aspx?id=54259) <br> - [Get started with MDT](https://docs.microsoft.com/en-us/windows/deployment/deploy-windows-mdt/get-started-with-the-microsoft-deployment-toolkit) <br> - [Microsoft Assessment and Planning Toolkit](https://docs.microsoft.com/en-us/previous-versions//bb977556(v=technet.10)) <br> - [Windows Server servicing channels](https://learn.microsoft.com/en-us/windows-server/get-started/servicing-channels-comparison) <br> - [Key Management Services (KMS) client activation and product keys](https://learn.microsoft.com/en-us/windows-server/get-started/kms-client-activation-keys) |
 | Overview of Windows Server Core | - [Roles, Role Services, and Features not in Windows Server - Server Core](https://docs.microsoft.com/en-us/windows-server/administration/server-core/server-core-removed-roles) <br> - [Roles, Role Services, and Features included in Windows Server - Server Core](https://docs.microsoft.com/en-us/windows-server/administration/server-core/server-core-roles-and-services) |
 
@@ -161,17 +161,9 @@ has_children: false
 
 | Lessons | References | 
 | --- | --- |
-| Overview of Windows Server monitoring tools |
-
-- [Windows commands prompt](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands)
-<br> -  [Sysinternals](https://learn.microsoft.com/en-us/sysinternals/)
-    
-
-| Using Performance Monitor |
-
-
-
-| Monitoring event logs for troubleshooting |
+| Overview of Windows Server monitoring tools | - [Windows commands prompt](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands) <br> -  [Sysinternals](https://learn.microsoft.com/en-us/sysinternals/) |
+| Using Performance Monitor | |
+| Monitoring event logs for troubleshooting | |
 
 
 
@@ -181,7 +173,7 @@ has_children: false
 
 | Lessons | References | 
 | --- | --- |
-- AD DS migration
-- Storage Migration Service
-- Windows Server migration tools
+| AD DS migration | |
+| Storage Migration Service | |
+| Windows Server migration tools | |
 

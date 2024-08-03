@@ -23,7 +23,6 @@ has_children: false
 
 ## Module 01: Windows Server Administration Overview 
 
-
 - **Manage servers remotely**
 
     ```powershell
@@ -35,6 +34,24 @@ has_children: false
 
     Get-Service | Out-File \SEA-ADM1\C$\ServiceStatus.txt
     ```
+
+
+- **Create the Sales Managers group and add a user**
+
+    ```powershell
+    Enter-PSSession -ComputerName SEA-DC1
+
+    New-ADGroup -Name Sales Managers -GroupCategory Security -GroupScope Global -DisplayName "Sales Managers" -Path "OU=Managers, DC=Contoso, DC=com" -Description "Sales Managers"
+
+    Get-ADUser Ajay
+
+    Get-ADGroup "CN=Sales Managers, OU=Managers, DC=Contoso, DC=com"
+
+    Add-ADGroupMember -Identity "Sales Managers" -Members Ajay
+
+    Get-ADGroupMember -Identity "Sales Managers" | fl
+    ```
+
 
 
 <br/>
