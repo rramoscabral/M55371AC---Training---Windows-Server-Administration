@@ -59,7 +59,7 @@ The Windows Server Administration 55371AC Training Course offers comprehensive k
 - Infrastructure Engineers
 
 
-### **Participant profiles **
+### **Participant profiles**
 - IT Professionals who have some experiencing working with Windows Server and are looking for covering core administration components and technologies in Windows Server.
 - Server administrators from previous Windows Server versions to update their knowledge and skills related to Windows Server.
 . Individuals from a service desk role who wish to transition into server maintenance

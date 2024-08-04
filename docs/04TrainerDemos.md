@@ -35,6 +35,7 @@ has_children: false
     Get-Service | Out-File \SEA-ADM1\C$\ServiceStatus.txt
     ```
 
+    <br/>
 
 - **Create the Sales Managers group and add a user**
 
@@ -51,6 +52,8 @@ has_children: false
 
     Get-ADGroupMember -Identity "Sales Managers" | fl
     ```
+
+    <br/>
 
 
 
@@ -70,6 +73,8 @@ has_children: false
     .\install-docker-ce.ps1
     ```
 
+    <br/>
+
 <br/>
 
 ---
@@ -78,8 +83,128 @@ has_children: false
 
 
 
+## Module 07: Disaster recovery in Windows Server
 
-# Module 11: Server and performance monitoring in Windows Server
+- **Implementing Hyper-V Replica**
+
+    ```powershell
+
+    #$cred=Get-Credential 
+
+    $password = ConvertTo-SecureString "Pa55w.rd" -AsPlainText -Force
+    $cred = New-Object System.Management.Automation.PSCredential ("Contoso\Administrator", $password)
+
+    $sess = New-PSSession -Credential $cred -ComputerName sea-svr1.contoso.com 
+    
+    Enter-PSSession $sess 
+
+    Get-Netfirewallrule -displayname "Hyper-V Replica HTTP Listener (TCP-In)" 
+
+    Enable-Netfirewallrule -displayname "Hyper-V Replica HTTP Listener (TCP-In)"
+
+    Get-Netfirewallrule -displayname "Hyper-V Replica HTTP Listener (TCP-In)" 
+
+    Set-VMReplicationServer -ReplicationEnabled $true -AllowedAuthenticationType Kerberos -ReplicationAllowedFromAnyServer $true -DefaultStorageLocation c:\ReplicaStorage
+
+    Get-VMReplicationServer
+
+    RepEnabled:True AuthType:KerbKerAuthPort:80 CertAuthPort:443AllowAnyServer:True
+
+    Get-VM 
+
+    $sess1 = New-PSSession -Credential $cred -ComputerName sea-svr2.contoso.com 
+
+    Enter-PSSession $sess1 
+
+    Enable-VMReplication SEA-CORE1 -ReplicaServerName SEA-SVR2.contoso.com -ReplicaServerPort 80 -AuthenticationType Kerberos -computername SEA-SVR1.contoso.com 
+
+    Start-VMInitialReplication SEA-CORE1 
+
+    Get-VMReplication
+
+    ```
+
+
+<br/>
+
+---
+
+<br/>
+
+## Module 08: Windows Server security
+
+
+- **Locate problematic accounts**
+
+    ```powershell
+    New-ADUser -Name "JamesBrown" -OtherAttributes @{'title’="manager";'mail’="james.brown@contoso.com"} –PasswordNeverExpires:$true –AccountPassword (ConvertTo-SecureString -String "Pa55w.rd" -AsPlainText -Force ) –Enabled:$true -verbose 
+
+    Get-ADUser -Filter {Enabled -eq $true -and PasswordNeverExpires -eq $true}
+
+    $days = (Get-Date).Adddays(-90) Get-ADUser -Filter {LastLogonDate -lt $days -and enabled -eq $true} -Properties LastLogonDate
+
+    #In this demo no accounts will be returned.
+    ```
+
+    <br/>
+
+
+- **Configure and deploy LAPS**
+
+    ```powershell
+
+    # SEA-ADM1
+
+    New-ADOrganizationalUnit -Name "Seattle_Servers" Get-ADComputer SEA-SVR1 | Move-ADObject –TargetPath "OU=Seattle_Servers,DC=Contoso,DC=com"
+
+    Msiexec /I C:\Labfiles\Mod08\LAPS.x64.msi
+
+    Import-Module admpwd.ps 
+    Update-AdmPwdADSchema 
+    Set-AdmPwdComputerSelfPermission -Identity "Seattle_Servers"
+
+    # SEA-SVR1
+
+    Msiexec /I \\SEA-ADM1\c$\Labfiles\Mod08\LAPS.x64.msi
+
+    gpupdate /force
+
+
+    # SEA-ADM1
+
+    Get-AdmPwdPassword SEA-SVR1 | Out-Gridview 
+    ```
+
+    <br/>
+
+<br/>
+
+---
+
+<br/>
+
+
+
+## Module 09: RDS in Windows Server
+
+
+- **Install RDS using Windows Server PowerShell**
+
+    ```powershell
+    $SVR="SEA-RDS1.contoso.com"
+
+    New-RDSessionDeployment -ConnectionBroker $SVR -WebAccessServer $SVR -SessionHost $SVR
+    ```
+
+    <br/>
+
+<br/>
+
+---
+
+<br/>
+
+## Module 11: Server and performance monitoring in Windows Server
 
 
 - **GUI-based tools launch from the command prompt**
@@ -92,3 +217,6 @@ has_children: false
     | Reliability Monitor               | PerfMon.exe /rel | 
     | Event Viewer                      | EventVwr.msc |
     | Server Manager                    | ServerManager.exe |
+
+
+    <br/>
