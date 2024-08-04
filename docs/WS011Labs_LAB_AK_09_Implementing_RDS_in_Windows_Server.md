@@ -1,12 +1,12 @@
 ---
 layout: default
-title: 'Module 9 Lab: Implementing RDS in Windows Server'
+title: 'Module 09 Lab: Implementing RDS in Windows Server'
 has_children: false
 parent: 'WS011T00 Hands-on Labs'
 lab:
     title: 'Lab: Implementing RDS in Windows Server'
     type: 'Answer Key'
-    module: 'Module 9: RDS in Windows Server'
+    module: 'Module 09: RDS in Windows Server'
 ---
 
 # Lab answer key: Implementing RDS in Windows Server

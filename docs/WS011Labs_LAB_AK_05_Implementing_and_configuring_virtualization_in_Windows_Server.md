@@ -1,12 +1,12 @@
 ---
 layout: default
-title: 'Module 5 Lab: Implementing and configuring virtualization in Windows Server'
+title: 'Module 05 Lab: Implementing and configuring virtualization in Windows Server'
 has_children: false
 parent: 'WS011T00 Hands-on Labs'
 lab:
     title: 'Lab: Implementing and configuring virtualization in Windows Server'
     type: 'Answer Key'
-    module: 'Module 5: Hyper-V virtualization and containers in Windows Server'
+    module: 'Module 05: Hyper-V virtualization and containers in Windows Server'
 ---
 
 # Lab answer key: Implementing and configuring virtualization in Windows Server

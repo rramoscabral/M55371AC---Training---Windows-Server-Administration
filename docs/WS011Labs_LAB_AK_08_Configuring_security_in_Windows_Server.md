@@ -1,12 +1,12 @@
 ---
 layout: default
-title: 'Module 8 Lab: Configuring security in Windows Server'
+title: 'Module 08 Lab: Configuring security in Windows Server'
 has_children: false
 parent: 'WS011T00 Hands-on Labs'
 lab:
     title: 'Lab: Configuring security in Windows Server'
     type: 'Answer Key'
-    module: 'Module 8: Windows Server security'
+    module: 'Module 08: Windows Server security'
 ---
 
 # Lab answer key: Configuring security in Windows Server

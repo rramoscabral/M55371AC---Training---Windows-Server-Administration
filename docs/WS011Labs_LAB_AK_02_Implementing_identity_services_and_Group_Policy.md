@@ -1,12 +1,12 @@
 ---
 layout: default
-title: 'Module 1 Lab: Implementing identity services and Group Policy'
+title: 'Module 02 Lab: Implementing identity services and Group Policy'
 has_children: false
 parent: 'WS011T00 Hands-on Labs'
 lab:
     title: 'Lab: Implementing identity services and Group Policy'
     type: 'Answer Key'
-    module: 'Module 2: Identity services in Windows Server'
+    module: 'Module 02: Identity services in Windows Server'
 ---
 
 # Lab answer key: Implementing identity services and Group Policy

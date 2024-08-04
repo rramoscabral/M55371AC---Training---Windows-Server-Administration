@@ -1,12 +1,12 @@
 ---
 layout: default
-title: 'Module 3 Lab: Implementing and configuring network infrastructure services in Windows Server'
+title: 'Module 03 Lab: Implementing and configuring network infrastructure services in Windows Server'
 has_children: false
 parent: 'WS011T00 Hands-on Labs'
 lab:
     title: 'Lab: Implementing and configuring network infrastructure services in Windows Server'
     type: 'Answer Key'
-    module: 'Module 3: Network Infrastructure services in Windows Server'
+    module: 'Module 03: Network Infrastructure services in Windows Server'
 ---
 
 # Lab answer key: Implementing and configuring network infrastructure services in Windows Server

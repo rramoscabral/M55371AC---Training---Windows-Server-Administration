@@ -1,12 +1,12 @@
 ---
 layout: default
-title: 'Module 7 Lab: Implementing Hyper-V Replica and Windows Server Backup'
+title: 'Module 07 Lab: Implementing Hyper-V Replica and Windows Server Backup'
 has_children: false
 parent: 'WS011T00 Hands-on Labs'
 lab:
     title: 'Lab: Implementing Hyper-V Replica and Windows Server Backup'
     type: 'Answer Key'
-    module: 'Module 7: Disaster Recovery in Windows Server'
+    module: 'Module 07: Disaster Recovery in Windows Server'
 ---
 
 # Lab answer key: Implementing Hyper-V Replica and Windows Server Backup

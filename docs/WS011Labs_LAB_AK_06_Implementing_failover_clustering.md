@@ -1,12 +1,12 @@
 ---
 layout: default
-title: 'Module 6 Lab: Implementing failover clustering'
+title: 'Module 06 Lab: Implementing failover clustering'
 has_children: false
 parent: 'WS011T00 Hands-on Labs'
 lab:
     title: 'Lab: Implementing failover clustering'
     type: 'Answer Key'
-    module: 'Module 6: High availability in Windows Server'
+    module: 'Module 06: High availability in Windows Server'
 ---
 
 # Lab answer key: Implementing failover clustering

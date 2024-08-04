@@ -1,12 +1,12 @@
 ---
 layout: default
-title: 'Module 1 Lab: Deploying and configuring Windows Server'
+title: 'Module 01 Lab: Deploying and configuring Windows Server'
 has_children: false
 parent: 'WS011T00 Hands-on Labs'
 lab:
     title: 'Lab: Deploying and configuring Windows Server'
     type: 'Answer Key'
-    module: 'Module 1: Windows Server administration'
+    module: 'Module 01: Windows Server administration'
 ---
 
 # Lab: Deploying and configuring Windows Server

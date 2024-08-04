@@ -1,12 +1,12 @@
 ---
 layout: default
-title: 'Module 4 Lab: Implementing storage solutions in Windows Server'
+title: 'Module 04 Lab: Implementing storage solutions in Windows Server'
 has_children: false
 parent: 'WS011T00 Hands-on Labs'
 lab:
     title: 'Lab: Implementing storage solutions in Windows Server'
     type: 'Answer Key'
-    module: 'Module 4: File servers and storage management in Windows Server'
+    module: 'Module 04: File servers and storage management in Windows Server'
 ---
 
 # Lab answer key: Implementing storage solutions in Windows Server
