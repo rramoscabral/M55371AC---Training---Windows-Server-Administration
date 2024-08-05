@@ -55,6 +55,19 @@ has_children: false
 
     <br/>
 
+-- **Configure Server Core**
+
+    ```powershell
+    # Change keyboard to en-US
+    Set-WinUserLanguageList - LanguageList en-US -Force
+    Set-Culture en-US
+
+    # Change keyboard to pt-PT
+    Set-WinUserLanguageList - LanguageList pt-PT -Force
+    Set-Culture pt-PT
+    ```
+    
+    <br>
 
 
 <br/>
