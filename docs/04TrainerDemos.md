@@ -32,7 +32,7 @@ has_children: false
 
     Get-Service -Name IISAdmin | Restart-Service
 
-    Get-Service | Out-File \SEA-ADM1\C$\ServiceStatus.txt
+    Get-Service | Out-File '\\SEA-ADM1\C$\ServiceStatus.txt'
     ```
 
     <br/>
@@ -42,7 +42,7 @@ has_children: false
     ```powershell
     Enter-PSSession -ComputerName SEA-DC1
 
-    New-ADGroup -Name Sales Managers -GroupCategory Security -GroupScope Global -DisplayName "Sales Managers" -Path "OU=Managers, DC=Contoso, DC=com" -Description "Sales Managers"
+    New-ADGroup -Name "Sales Managers" -GroupCategory Security -GroupScope Global -DisplayName "Sales Managers" -Path "OU=Managers, DC=Contoso, DC=com" -Description "Sales Managers"
 
     Get-ADUser Ajay
 
