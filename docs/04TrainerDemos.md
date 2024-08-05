@@ -80,6 +80,26 @@ has_children: false
 
 <br/>
 
+
+## Module 02: Identity services in Windows Server
+
+- **Administrative templates**
+
+    1. Download administrative templates (ADMX/ADL).
+    2. Copy all **.admx** file to ``c:\Windows\SYSVOL\sysvol\Contoso.com\Policies\PolicyDefinitions``.
+    3. Open **Group Policy Management**.
+    4. Create or edit an existing GPO.
+    5. Check **Computer Configuration > Policies > Administrative Templates** and **User Configuration > Policies > Administrative Templates**.
+  
+    <br>
+
+
+<br/>
+
+---
+
+<br/>
+
 ## Module 05: Hyper-V virtualization and containers in Windows Server
 
 
