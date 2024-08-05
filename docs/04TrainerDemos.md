@@ -65,6 +65,10 @@ has_children: false
     # Change keyboard to pt-PT
     Set-WinUserLanguageList - LanguageList pt-PT -Force
     Set-Culture pt-PT
+
+
+    # Remote Event Log Management
+    Set-NetFirewallRule -DisplayGroup 'Remote Event Log Management' -Enabled True -PassThru | select DisplayName, Enable
     ```
     
     <br>
