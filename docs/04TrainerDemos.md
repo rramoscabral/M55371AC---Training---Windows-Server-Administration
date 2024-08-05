@@ -55,7 +55,7 @@ has_children: false
 
     <br/>
 
--- **Configure Server Core**
+- **Configure Server Core**
 
     ```powershell
     # Change keyboard to en-US
