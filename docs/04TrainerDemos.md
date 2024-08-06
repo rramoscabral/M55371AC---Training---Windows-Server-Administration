@@ -127,6 +127,11 @@ has_children: false
 - **Create a new mirrored volume with Diskpart**
 
     ```bash
+
+    Enter-PSSession SEA-SVR3
+
+    diskpart
+
     List disk
    
     Select disk 1
@@ -193,7 +198,7 @@ has_children: false
  
     Get-SmbShare SalesShare2 | FL
     ```
-    
+
 <br/>
 
 
