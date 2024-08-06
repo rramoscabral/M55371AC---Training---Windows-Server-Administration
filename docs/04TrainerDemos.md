@@ -126,7 +126,7 @@ has_children: false
 
 - **Create a new mirrored volume with Diskpart**
 
-    ```cli
+    ```bash
     List disk
    
     Select disk 1
@@ -151,6 +151,33 @@ has_children: false
     
     Assign letter=M:
     ```
+
+    <br/>
+
+- **Break mirror**
+
+    ```bash
+    C:\labfiles\mod04\CreateLabFiles.cmd \\sea-SVR3\Corpdata
+
+    M:
+
+    Cd corpdata
+
+    Dir
+    
+    diskpart
+  
+    List volume
+
+    Select volume M
+    
+    Break disk=2
+    
+    Exit
+   
+    Dir
+    ```
+    <br/>
 
 <br/>
 
