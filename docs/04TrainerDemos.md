@@ -179,7 +179,25 @@ has_children: false
     ```
     <br/>
 
+
+- **Create an SMB share by using Windows PowerShell Remote**
+
+    ```powershell
+    Enter-PSSession -ComputerName SEA-SVR3
+
+    Mkdir M:\Shares\SalesShare2
+   
+    New-SmbShare -Name SalesShare2 -Path M:\Shares\SalesShare2 -FolderEnumerationMode AccessBased
+
+    Get-SmbShare
+ 
+    Get-SmbShare SalesShare2 | FL
+    ```
+    
 <br/>
+
+
+
 
 ---
 
