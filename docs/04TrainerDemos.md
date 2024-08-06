@@ -121,6 +121,43 @@ has_children: false
 
 <br/>
 
+## Module 04: File Servers and Storage management in Windows Server
+
+
+- **Create a new mirrored volume with Diskpart**
+
+    ```cli
+    List disk
+   
+    Select disk 1
+   
+    attributes disk clear readonly
+    
+    online disk noerr
+    
+    Convert dynamic
+    
+    Select disk 2
+
+    attributes disk clear readonly
+    
+    online disk noerr
+    
+    Convert dynamic
+
+    create volume mirror disk=1,2
+   
+    format fs=ntfs quick label "Mirrored Volume"
+    
+    Assign letter=M:
+    ```
+
+<br/>
+
+---
+
+<br/>
+
 ## Module 05: Hyper-V virtualization and containers in Windows Server
 
 
