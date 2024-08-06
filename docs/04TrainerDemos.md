@@ -81,7 +81,7 @@ has_children: false
 <br/>
 
 
-## Module 02: Identity services in Windows Server
+## Module 02: Identity services in Windows Server
 
 - **Administrative templates**
 
@@ -91,6 +91,27 @@ has_children: false
     4. Create or edit an existing GPO.
     5. Check **Computer Configuration > Policies > Administrative Templates** and **User Configuration > Policies > Administrative Templates**.
   
+    <br>
+
+
+<br/>
+
+---
+
+<br/>
+
+
+## Module 03: Network infrastructure services in Windows Server
+
+- **Create the IP Address Management (IPAM) GPOs**
+
+    ```powershell
+    
+    Invoke-IpamGpoProvisioning -Domain contoso.com -GpoPrefixName IPAM -IpamServerFqdn sea-svr2.contoso.com 
+
+    Get-GPO -All | FL DisplayName 
+    ```
+
     <br>
 
 
