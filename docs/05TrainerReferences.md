@@ -64,7 +64,7 @@ has_children: false
 
 | Lessons | References | 
 | --- | --- |
-| Volumes and File Systems in Windows Server |  | 
+| Volumes and File Systems in Windows Server | - [Overview of FAT, HPFS, and NTFS File Systems](https://learn.microsoft.com/en-us/troubleshoot/windows-client/backup-and-storage/fat-hpfs-and-ntfs-file-systems) <br> - [Resilient File System (ReFS) overview](https://learn.microsoft.com/en-us/windows-server/storage/refs/refs-overview)  | 
 | Implementing sharing in Windows Server    | - [Overview of file sharing using the SMB 3 protocol in Windows Server](https://learn.microsoft.com/en-us/windows-server/storage/file-server/file-server-smb-overview) |
 | Implementing Storage Spaces in Windows Server | - [Storage Spaces Direct overview](https://learn.microsoft.com/en-us/azure-stack/hci/concepts/storage-spaces-direct-overview) <br> -  [Storage Spaces Direct hardware requirements](https://learn.microsoft.com/en-us/windows-server/storage/storage-spaces/storage-spaces-direct-hardware-requirements) | 
 | Implementing Data Deduplication | - [Data Deduplication Overview](https://learn.microsoft.com/en-us/windows-server/storage/data-deduplication/overview) <br> - [Install and enable Data Deduplication](https://learn.microsoft.com/en-us/windows-server/storage/data-deduplication/install-enable) |
