@@ -9,7 +9,36 @@ lab:
     module: 'Module 07: Disaster Recovery in Windows Server'
 ---
 
-# Lab answer key: Implementing Hyper-V Replica and Windows Server Backup
+# Lab: Implementing Hyper-V Replica and Windows Server Backup
+
+## Scenario
+
+You're working as an administrator at Contoso, Ltd. Contoso wants to assess and configure new disaster recovery and backup features and technologies. As the system administrator, you have been tasked with performing that assessment and implementation. You decided to evaluate **Hyper-V Replica** and Windows Server Backup.
+
+## Objectives
+
+After completing this lab, you'll be able to:
+
+- Configure and implement **Hyper-V Replica**.
+- Configure and implement backup with Windows Server Backup.
+
+## Lab setup
+
+Estimated time: **45 minutes**
+
+Virtual machines: **WS-011T00A-SEA-DC1**, **WS-011T00A-SEA-SVR1**, **WS-011T00A-SEA-SVR2**, and **WS-011T00A-SEA-ADM1**
+
+User name: **Contoso\\Administrator**
+
+Password: **Pa55w.rd**
+
+1. Ensure that the **SEA-DC1**, **SEA-ADM1**, **SEA-SVR1**, and **SEA-SVR2** virtual machines (VMs) are running.
+1. Select **SEA-ADM1**.
+1. Sign in by using the following credentials:
+   - User name: **Administrator**
+   - Password: **Pa55w.rd**
+   - Domain: **Contoso**
+1. When instructed in the lab, repeat these steps for **SEA-DC1**, **SEA-SVR1**, and **SEA-SVR2**.
 
 ## Exercise1: Implementing Hyper-V Replica
 

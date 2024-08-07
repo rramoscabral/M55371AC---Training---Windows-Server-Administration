@@ -9,7 +9,51 @@ lab:
     module: 'Module 09: RDS in Windows Server'
 ---
 
-# Lab answer key: Implementing RDS in Windows Server
+# Lab: Implementing RDS in Windows Server
+
+## Scenario
+
+You have been asked to configure a basic Remote Desktop Services (RDS) environment as the starting point for the new infrastructure that will host the sales application. You would like to deploy RDS services, perform initial configuration, and demonstrate to the delivery team how to connect to an RDS deployment.
+
+You are evaluating whether to use user profile disks for storing user profiles and making the disks available on all servers in the collection. A coworker reminded you that users often store unnecessary files in their profiles, and you need to explore how to exclude such data from the profile and set a limit on the profile size.
+
+As the sales application will publish on the RD Web Access site, you also have to learn how to configure and access RemoteApp programs from the Remote Desktop Web Access (RD Web Access) portal.
+
+You been tasked with creating a proof of concept (POC) for a virtual machine (VM)—based session deployment of Virtual Desktop Infrastructure (VDI). You will create a virtual desktop template on a preexisting Microsoft Hyper-V VM manually with a few optimizations.
+
+## Objectives
+
+After completing this lab, you’ll be able to:
+
+- Implement RDS
+- Configure session collection settings and use RDS
+- Configure virtual desktop template
+
+## Lab Setup
+
+**Estimated Time:** 90 minutes
+
+For this lab, you'll use the following VMs:
+
+- **WS-011T00A-SEA-DC1**
+- **WS-011T00A-SEA-RDS1**
+- **WS-011T00A-SEA-CL1**
+
+**User Name**: Contoso\Administrator
+
+**Password**: Pa55w.rd
+
+Sign in to **WS-011T00A-SEA-DC1** and **WS-011T00A-SEA-RDS1** by using the following credentials:
+
+- User name: **Administrator**
+- Password: **Pa55w.rd**
+- Domain: **Contoso**
+
+Sign in to **WS-011T00A-SEA-CL1** by using the following credentials:
+
+- User name: **Jane**
+- Password: **Pa55w.rd**
+- Domain: **Contoso**r
 
 ### Exercise 1: Implementing RDS
 

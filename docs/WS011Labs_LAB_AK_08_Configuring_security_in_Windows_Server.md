@@ -9,7 +9,27 @@ lab:
     module: 'Module 08: Windows Server security'
 ---
 
-# Lab answer key: Configuring security in Windows Server
+# Lab: Configuring security in Windows Server
+
+## Scenario
+
+Contoso Pharmaceuticals is a medical research company with about 5,000 employees worldwide. They have specific needs for ensuring that medical records and data remain private. The company has a headquarters location and multiple worldwide sites. Contoso has recently deployed a Windows Server and Windows client infrastructure. You have been asked to implement improvements in the server security configuration.
+
+## Objectives
+
+After completing this lab, you will be able to:
+
+- Configure Windows Defender Credential Guard.
+- Locate problematic user accounts.
+- Implement and verify LAPS (Local Administrator Password Solution)
+
+## Estimate time: 40 minutes
+
+## Lab setup
+
+Virtual machines: **WS-011T00A-SEA-DC1**, **WS-011T00A-SEA-SVR1**, and **WS-011T00A-SEA-ADM1**
+User name: Contoso\\Administrator
+Password: Pa55w.rd
 
 ## Exercise 1: Configuring Windows Defender Credential Guard
 

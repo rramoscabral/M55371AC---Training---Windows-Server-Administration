@@ -9,7 +9,38 @@ lab:
     module: 'Module 10: Remote Access and web services in Windows Server'
 ---
 
-# Lab answer key: Deploying network workloads
+# Lab: Deploying network workloads
+
+## Scenario
+
+The employees in the IT department at Contoso need to be able to access server systems outside of business hours to correct issues that arise during weekends or holidays. Some of the employees are using computers that aren't members of the ```contoso.com``` domain. Other users are running non-Windows operating systems on their computers. To enable remote access for these users, you will provide remote access to Windows Admin Center and secure it with Web Application Proxy and deploy a secure VPN solution using the SSTP VPN protocol.
+
+You are a web server administrator for Contoso and your company is preparing to deploy a new intranet web application on an internal web server. You need to verify the server configuration and install IIS. The website must be accessible using a friendly DNS name and all web connections to and from the server must be encrypted.
+
+## Objectives
+
+After completing this lab, you’ll be able to:
+
+- Deploy and configure Web Application Proxy
+- Implement a VPN (virtual private network) solution
+- Deploy and configure a web server
+
+## Lab setup
+
+**Estimated time:** 60 minutes
+
+For this lab, you will use the following virtual machines:
+
+- **WS-011T00A-SEA-DC1**
+- **WS-011T00A-SEA-ADM1**
+- **WS-011T00A-SEA-SVR1**
+- **WS-011T00A-SEA-SVR3**
+- **WS-011T00A-SEA-CL1**
+
+Sign in by using the following credentials:
+
+- User Name: **Contoso\Administrator**
+- Password: **Pa55w.rd**
 
 ## Lab setup
 

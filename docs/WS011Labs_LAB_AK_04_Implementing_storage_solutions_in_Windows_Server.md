@@ -9,9 +9,34 @@ lab:
     module: 'Module 04: File servers and storage management in Windows Server'
 ---
 
-# Lab answer key: Implementing storage solutions in Windows Server
+# Lab: Implementing storage solutions in Windows Server
 
-> **Note**: Be sure to revert the virtual machines (VMs) between each exercise. Due to most of the VMs being Windows Server 2019 Server Core, the time it takes to revert and restart is faster than attempting to undo changes made to the storage environment in the exercises.
+## Scenario
+
+At Contoso, Ltd., you need to implement the Storage Spaces feature on the Windows Server 2019 servers to simplify storage access and provide redundancy at the storage level. Management wants you to test Data Deduplication to save storage. They also want you to implement Internet Small Computer System Interface (iSCSI) storage to provide a simpler solution for deploying storage in the organization. Additionally, the organization is exploring options for making storage highly available and researching the requirements that it must meet for high availability. You want to test the feasibility of using highly available storage, specifically Storage Spaces Direct.
+
+## Objectives
+
+After completing this lab, you'll be able to:
+
+- Implement Data Deduplication.
+- Configure Internet Small Computer System Interface iSCSI storage.
+- Configure Storage Spaces.
+- Implement Storage Spaces Direct.
+
+## Estimated time: 90 minutes
+
+## Lab setup
+
+**Virtual machines:**
+
+- For Exercises 1-3: **WS-011T00A-SEA-DC1**, **WS-011T00A-SEA-SVR3**, and **WS-011T00A-SEA-ADM1**
+- For Exercise 4: **WS-011T00A-SEA-DC1**, **WS-011T00A-SEA-SVR1**, **WS-011T00A-SEA-SVR2**, **WS-011T00A-SEA-SVR3**, and **WS-011T00A-SEA-ADM1**
+
+**Username:** Contoso\Administrator
+**Password:** Pa55w.rd
+
+> **Note:** You must revert the virtual machines (VM) between each exercise. Because most of the VMs are Windows Server 2019 Server Core VMs, the time to revert and restart is faster than trying to undo changes made to the storage environment in the exercises.
 
 ## Exercise 1: Implementing Data Deduplication
 

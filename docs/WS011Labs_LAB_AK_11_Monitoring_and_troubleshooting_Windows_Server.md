@@ -9,7 +9,40 @@ lab:
     module: 'Module 11: Monitoring, performance, and troubleshooting'
 ---
 
-# Lab answer key: Monitoring and troubleshooting Windows Server
+# Lab: Monitoring and troubleshooting Windows Server
+
+## Scenario
+
+Contoso, Ltd is a global engineering and manufacturing company with its head office in Seattle, Washington, in the United States. An IT office and datacenter are in Seattle to support the Seattle location and other locations. Contoso recently deployed a Windows Server 2019 server and client infrastructure.
+
+Because the organization deployed new servers, it's important to establish a performance baseline with a typical load for these new servers. You've been asked to work on this project. Additionally, to make the process of monitoring and troubleshooting easier, you decided to perform centralized monitoring of event logs.
+
+## Objectives
+
+After completing this lab, you'll be able to:
+
+- Establish a performance baseline.
+- Identify the source of a performance problem.
+- Review and configure centralized event logs.
+
+## Lab setup
+
+Estimated time: **40 minutes**
+
+Virtual machines: **WS-011T00A-SEA-DC1**, **WS-011T00A-SEA-ADM1**, and **WS-011T00A-SEA-CL1**
+
+User name: **Contoso\Administrator**
+
+Password: **Pa55w.rd**
+
+## Lab setup
+
+1. Select **SEA-DC1**.
+2. Sign in by using the following credentials:
+   - User name: **Administrator**
+   - Password: **Pa55w.rd**
+   - Domain: **Contoso**
+3. Repeat these steps for **SEA-ADM1** and **SEA-CL1**.
 
 ### Exercise 1: Establishing a performance baseline
 

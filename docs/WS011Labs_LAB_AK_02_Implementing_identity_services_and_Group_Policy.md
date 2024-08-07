@@ -9,7 +9,41 @@ lab:
     module: 'Module 02: Identity services in Windows Server'
 ---
 
-# Lab answer key: Implementing identity services and Group Policy
+# Lab: Implementing identity services and Group Policy
+
+## Scenario
+
+You are working as an administrator at Contoso Ltd. The company is expanding its business with several new locations. The Active Directory Domain Services (AD DS) Administration team is currently evaluating methods available in Windows Server for rapid and remote domain controller deployment. The team is also searching for a way to automate certain AD DS administrative tasks. Additionally, the team wants to establish configuration management based on Group Policy Objects (GPO) and enterprise certification authority (CA) hierarchy.
+
+## Objectives
+
+After completing this lab, you’ll be able to:
+
+- Deploy a new domain controller on Server Core.
+
+- Configure Group Policy.
+
+- Deploy, manage, and use digital certificates.
+
+## Estimated time: 60 minutes
+
+## Lab setup
+
+Virtual machines: **WS-011T00A-SEA-DC1**, **WS-011T00A-SEA-SVR1**, **WS-011T00A-SEA-ADM1**, and **WS-011T00A-SEA-CL1**
+
+User Name: **Contoso\\Administrator**
+
+Password: **Pa55w.rd**
+
+## Lab setup
+
+1. Select  **SEA-DC1**.
+1. Sign in using the following credentials:
+
+   - User name: **Administrator**
+   - Password: **Pa55w.rd**
+   - Domain: **Contoso**
+
 
 ## Exercise 1: Deploying a new domain controller on Server Core
 

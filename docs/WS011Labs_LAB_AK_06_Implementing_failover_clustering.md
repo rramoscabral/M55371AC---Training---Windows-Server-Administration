@@ -9,7 +9,34 @@ lab:
     module: 'Module 06: High availability in Windows Server'
 ---
 
-# Lab answer key: Implementing failover clustering
+
+# Lab: Implementing failover clustering
+
+## Scenario
+
+As the business of Contoso, Ltd. grows, it's becoming increasingly important that many of the applications and services on its network are always available. Contoso has many services and applications that must be available to internal and external users who work in different time zones around the world. Many of these applications can't be made highly available by using Network Load Balancing (NLB). Therefore, you should use a different technology to make these applications highly available.
+
+As one of the senior network administrators at Contoso, you're responsible for implementing failover clustering on the servers that are running Windows Server 2019 to provide high availability for network services and applications. You're also responsible for planning the failover cluster configuration and deploying applications and services on the failover cluster.
+
+## Objectives
+
+After completing this lab, you'll be able to:
+
+- Configure a failover cluster.
+- Deploy and configure a highly available file server on the failover cluster.
+- Validate the deployment of the highly available file server.
+
+## Estimated time: **60 minutes**
+
+## Lab setup
+
+Virtual machines: **SEA-DC1**, **SEA-ADM1**, **SEA-SVR2**, and **SEA-SVR3**
+
+User name: **Contoso\Administrator**
+
+Password: **Pa55w.rd**
+
+Sign in only to **SEA-ADM1**. Sign in to other virtual machines only when instructed in lab steps.
 
 ## Exercise 1: Configuring iSCSI storage
 

@@ -9,7 +9,38 @@ lab:
     module: 'Module 03: Network Infrastructure services in Windows Server'
 ---
 
-# Lab answer key: Implementing and configuring network infrastructure services in Windows Server
+# Lab: Implementing and configuring network infrastructure services in Windows Server
+
+## Scenario
+
+Contoso, Ltd. is a large organization with complex requirements for network services. To help meet these requirements, you will deploy and configure DHCP so that it is highly available to ensure service availability. You will also set up DNS so that Trey Research, a department within Contoso, can have its own DNS server in the testing area. Finally, you will provide remote access to Windows Admin Center and secure it with Web Application Proxy.
+
+## Objectives
+
+After completing this lab, you'll be able to:
+
+- Deploy and configure DHCP
+- Deploy and configure DNS
+
+## Estimated time: 30 minutes
+
+## Lab Setup
+
+Virtual machines:
+
+- **SEA-DC1**
+- **SEA-ADM1**
+- **SEA-SVR1**
+- **SEA-CL1**
+
+User name: **Contoso\Administrator**
+
+Password: **Pa55w.rd**
+
+For this lab, you'll use the available virtual machine environment. Before you begin the lab, complete the following steps:
+1. Open **SEA-DC1** and sign in as **Contoso\Administrator** with the password **Pa55w.rd**.
+1. Repeat step 1 for **SEA-ADM1**, **SEA-SVR1**, and **SEA-CL1**.
+
 
 ## Exercise 1: Deploying and configuring DHCP
 

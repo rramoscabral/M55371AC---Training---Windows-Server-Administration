@@ -9,7 +9,42 @@ lab:
     module: 'Module 05: Hyper-V virtualization and containers in Windows Server'
 ---
 
-# Lab answer key: Implementing and configuring virtualization in Windows Server
+
+# Lab: Implementing and configuring virtualization in Windows Server
+
+## Scenario
+
+Contoso is a global engineering and manufacturing company with its head office in Seattle, USA. An IT office and data center are in Seattle to support the Seattle location and other locations. Contoso recently deployed a Windows Server 2019 server and client infrastructure.
+
+Because of many physical servers being currently underutilized, the company plans to expand virtualization to optimize the environment. Because of this, you decide to perform a proof of concept to validate how Hyper-V can be used to manage a virtual machine environment. Also, the Contoso DevOps team wants to explore container technology to determine whether they can help reduce deployment times for new applications and to simplify moving applications to the cloud. You plan to work with the team to evaluate Windows Server containers and to consider providing Internet Information Services (Web services) in a container.
+
+## Objectives
+
+After completing this lab, you'll be able to:
+
+- Create and configure VMs.
+- Install and configure containers.
+
+## Lab Setup
+
+**Estimated Time:** 60 minutes
+
+**Virtual Machines**: WS-011T00A-SEA-DC1, WS-011T00A-SEA-ADM1, and WS-011T00A-SEA-SVR1
+
+**User Name**: Contoso\Administrator
+
+**Password**: Pa55w.rd
+Note that Internet access is required to successfully complete the second exercise in this lab.
+
+## Lab Startup
+
+1. Select  **SEA-DC1**.
+1. Sign in by using the following credentials:
+   - User name: **Administrator**
+   - Password: **Pa55w.rd**
+   - Domain: **Contoso**
+
+1. Repeat these steps for **SEA-ADM1** and **SEA-SVR1**.
 
 ### Exercise 1: Creating and configuring VMs
 
