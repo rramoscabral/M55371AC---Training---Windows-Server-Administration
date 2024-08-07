@@ -81,11 +81,12 @@ has_children: false
 
 | Lessons | References | 
 | --- | --- |
-| Hyper-V in Windows Server | - [What is Nested Virtualization](https://learn.microsoft.com/en-us/virtualization/hyper-v-on-windows/user-guide/nested-virtualization) <br> - [Set up a NAT network](https://learn.microsoft.com/en-us/virtualization/hyper-v-on-windows/user-guide/setup-nat-network) |
+| Hyper-V in Windows Server | - [What is Nested Virtualization](https://learn.microsoft.com/en-us/virtualization/hyper-v-on-windows/user-guide/nested-virtualization)  <br> - [Run Hyper-V in a Virtual Machine with Nested Virtualization](https://learn.microsoft.com/en-us/virtualization/hyper-v-on-windows/user-guide/enable-nested-virtualization)  <br> - [Set up a NAT network](https://learn.microsoft.com/en-us/virtualization/hyper-v-on-windows/user-guide/setup-nat-network) |
 | Configuring VMs | - [Upgrade virtual machine version in Hyper-V on Windows or Windows Server](https://learn.microsoft.com/en-us/windows-server/virtualization/hyper-v/deploy/upgrade-virtual-machine-version-in-hyper-v-on-windows-or-windows-server) <br> - [Create a virtual network](https://learn.microsoft.com/en-us/virtualization/hyper-v-on-windows/quick-start/connect-to-network) | 
 | Securing virtualization in Windows Server | - [Guarded fabric and shielded VMs overview](https://learn.microsoft.com/en-us/windows-server/security/guarded-fabric-shielded-vm/guarded-fabric-and-shielded-vms) |
-| Containers in Windows Server | - [Containers on Windows documentation](https://learn.microsoft.com/en-us/virtualization/windowscontainers/)  |
+| Containers in Windows Server | - [Containers on Windows documentation](https://learn.microsoft.com/en-us/virtualization/windowscontainers/) <br> - [Linux containers on Windows 10](https://learn.microsoft.com/en-us/virtualization/windowscontainers/deploy-containers/linux-containers)   |
 | Overview of Kubernetes | - [Kubernetes Documentation](https://kubernetes.io/docs/home/) | 
+
 
 
 
