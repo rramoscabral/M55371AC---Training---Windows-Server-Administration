@@ -210,15 +210,62 @@ has_children: false
 
 ## Module 05: Hyper-V virtualization and containers in Windows Server
 
+- **Install Docker on Windows Server**
 
-- **Windows Containers [Docker Community Edition (CE)](https://docs.docker.com/desktop/install/windows-install/) / [Moby Project](https://mobyproject.org/)**
+    * [Docker Community Edition (CE)](https://docs.docker.com/desktop/install/windows-install/)
+    * [Moby Project](https://mobyproject.org/)
 
-    ```powershell
+   ```powershell
+
+    Enter-PSSession -ComputerName SEA-SVR1
+
     Invoke-WebRequest -UseBasicParsing "https://raw.githubusercontent.com/microsoft/Windows-Containers/Main/helpful_tools/Install-DockerCE/install-docker-ce.ps1" -o install-docker-ce.ps1
-    .\install-docker-ce.ps1
+
+    ./install-docker-ce.ps1
+
+    Restart-Computer -ComputerName SEA-SVR1 -Force 
+
+    Enter-PSSession -ComputerName SEA-SVR1
+
+    ./install-docker-ce.ps1
+
+    docker --version
+
     ```
 
+
     <br/>
+
+- **Download and run a Windows container**
+
+    ```powershell
+    Docker images
+    
+    Docker search Microsoft
+    
+    docker container run hello-world:nanoserver
+    
+    # Nano Server (https://hub.docker.com/r/microsoft/windows-nanoserver)
+    # Microsoft Artifact Registry (https://mcr.microsoft.com/)
+    docker pull mcr.microsoft.com/windows/nanoserver:1809
+    docker pull mcr.microsoft.com/windows/nanoserver:ltsc2019
+
+    Docker images
+
+    # Interactive mode
+    Docker run -it --name NanoImage mcr.microsoft.com/windows/nanoserver:1809 -rm hostname
+
+    docker run -it mcr.microsoft.com/windows/nanoserver:ltsc2022 -rm hostname
+
+    # Hyper-V isolation mode
+    Docker run -it --name NanoHVImage --isolation=hyperv mcr.microsoft.com/windows/nanoserver:1809
+
+    hostname
+
+    exit
+    ```
+
+
 
 <br/>
 
@@ -226,6 +273,31 @@ has_children: false
 
 <br/>
 
+
+## Module 06: High Availablity in Windows Server
+
+-- **Validate and create a failover cluster**
+
+    ```powershell
+    Install-WindowsFeature -ComputerName SEA-SVR2 -Name Failover-Clustering -IncludeManagementTools
+    Install-WindowsFeature -ComputerName SEA-SVR3 -Name Failover-Clustering -IncludeManagementTools
+
+    Test-Cluster SEA-SVR2, SEA-SVR3 
+
+    New-Cluster -Name WFC2022 -Node sea-svr2 -StaticAddress 172.16.10.125 
+
+    Add-ClusterNode -Name SEA-SVR3 
+    ```
+
+    <br>
+
+
+
+<br/>
+
+---
+
+<br/>
 
 
 ## Module 07: Disaster recovery in Windows Server
