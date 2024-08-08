@@ -306,14 +306,19 @@ has_children: false
 
     ```powershell
 
+
+
+    # Create credentials for SEA-SVR1 and SEA-SVR2
     #$cred=Get-Credential 
 
     $password = ConvertTo-SecureString "Pa55w.rd" -AsPlainText -Force
     $cred = New-Object System.Management.Automation.PSCredential ("Contoso\Administrator", $password)
 
-    $sess = New-PSSession -Credential $cred -ComputerName sea-svr1.contoso.com 
+
+    # SEA-SVR1 as a Replica server for Hyper-V Replica
+    $sess1 = New-PSSession -Credential $cred -ComputerName sea-svr1.contoso.com 
     
-    Enter-PSSession $sess 
+    Enter-PSSession $sess1
 
     Get-Netfirewallrule -displayname "Hyper-V Replica HTTP Listener (TCP-In)" 
 
@@ -321,17 +326,33 @@ has_children: false
 
     Get-Netfirewallrule -displayname "Hyper-V Replica HTTP Listener (TCP-In)" 
 
+    # SEA-SVR1 as a Replica server for Hyper-V Replica
     Set-VMReplicationServer -ReplicationEnabled $true -AllowedAuthenticationType Kerberos -ReplicationAllowedFromAnyServer $true -DefaultStorageLocation c:\ReplicaStorage
 
     Get-VMReplicationServer
 
-    RepEnabled:True AuthType:KerbKerAuthPort:80 CertAuthPort:443AllowAnyServer:True
-
+    # SEA-CORE1 VM
     Get-VM 
 
-    $sess1 = New-PSSession -Credential $cred -ComputerName sea-svr2.contoso.com 
+    Exit
 
-    Enter-PSSession $sess1 
+
+    # SEA-SRV2 for Hyper-V Replica
+    $sess2 = New-PSSession -Credential $cred -ComputerName sea-svr2.contoso.com 
+
+    Enter-PSSession $sess2 
+
+    Install-WindowsFeature -Name Hyper-V, Hyper-V-PowerShell -Restart
+
+    Enter-PSSession $sess2 
+
+    Get-VM
+
+    Enable-Netfirewallrule -displayname "Hyper-V Replica HTTP Listener (TCP-In)"
+
+    Set-VMReplicationServer -ReplicationEnabled $true -AllowedAuthenticationType Kerberos -ReplicationAllowedFromAnyServer $true -DefaultStorageLocation c:\ReplicaStorage
+
+    Get-VMReplicationServer
 
     Enable-VMReplication SEA-CORE1 -ReplicaServerName SEA-SVR2.contoso.com -ReplicaServerPort 80 -AuthenticationType Kerberos -computername SEA-SVR1.contoso.com 
 
@@ -372,7 +393,9 @@ has_children: false
 
     # SEA-ADM1
 
-    New-ADOrganizationalUnit -Name "Seattle_Servers" Get-ADComputer SEA-SVR1 | Move-ADObject –TargetPath "OU=Seattle_Servers,DC=Contoso,DC=com"
+    New-ADOrganizationalUnit -Name "Seattle_Servers" 
+    
+    Get-ADComputer SEA-SVR1 | Move-ADObject –TargetPath "OU=Seattle_Servers,DC=Contoso,DC=com"
 
     Msiexec /I C:\Labfiles\Mod08\LAPS.x64.msi
 
@@ -380,19 +403,79 @@ has_children: false
     Update-AdmPwdADSchema 
     Set-AdmPwdComputerSelfPermission -Identity "Seattle_Servers"
 
-    # SEA-SVR1
+    # Create LAPS_GPO
+    gpmc.msc
+
+    # SEA-SVR1 locally
 
     Msiexec /I \\SEA-ADM1\c$\Labfiles\Mod08\LAPS.x64.msi
 
     gpupdate /force
 
 
-    # SEA-ADM1
+    # SEA-ADM1 
 
     Get-AdmPwdPassword SEA-SVR1 | Out-Gridview 
     ```
 
     <br/>
+
+
+- **Connect to a JEA endpoint**
+
+    ```powershell
+    New-ADGroup -Name "DNSOps" -path "OU=IT,DC=Contoso,DC=com" -GroupScope Global 
+     
+    Get-ADGroup "DNSOps" | Add-ADGroupMember -Members (Get-AdUser -Filter 'name -like "Administrator"')
+
+    Enter-PSSession SEA-SVR1
+
+    Cd 'c:\Program Files\WindowsPowerShell\Modules’ 
+    Mkdir DNSOps
+    Cd DNSOps
+    New-ModuleManifest .\DNSOps.psd1 
+    Mkdir RoleCapabilities 
+    Cd RoleCapabilities 
+    New-PSRoleCapabilityFile -Path .\DNSOps.psrc 
+
+
+
+    # Testing JEA in SEA-SVR1 
+
+    $dnsopssession = New-PSSession -ComputerName SEA-SVR1 -ConfigurationName DNSOps 
+    
+    Import-PSSession -Session $dnsopssession -Prefix DNSOps 
+    
+    Get-DNSOpsCommand
+    
+    Enter-PSSession -Session $dnsopssession 
+    
+    Get-ComputerInfo
+
+    Restart-Service W32Time
+    
+    Restart-Service DNS
+    ```
+
+
+- **Disable SMB 1.0, and configure SMB encryption on shares**
+
+    ```powershell
+    Enter-PSSession SEA-SVR1
+
+    Set-SmbServerConfiguration –EnableSMB1Protocol $false 
+
+    mkdir 'c:\labfiles\mod08' 
+    
+    New-SmbShare –Name 'Mod08' -Path 'c:\Labfiles\Mod08' –EncryptData $true 
+
+    Grant-FileShareAccess –Name Mod08 -AccountName 'Everyone' -AccessRight Full
+
+    # \\SEA-SVR1\mod08
+
+    ```
+
+
 
 <br/>
 
@@ -408,9 +491,13 @@ has_children: false
 - **Install RDS using Windows Server PowerShell**
 
     ```powershell
+    Enter-PSSession -Session SEA-DC1
+    
     $SVR="SEA-RDS1.contoso.com"
 
     New-RDSessionDeployment -ConnectionBroker $SVR -WebAccessServer $SVR -SessionHost $SVR
+
+    # The installation take approximately 5 minutes
     ```
 
     <br/>
