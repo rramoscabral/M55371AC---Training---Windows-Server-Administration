@@ -307,17 +307,15 @@ has_children: false
 - **Implementing Hyper-V Replica**
 
     ```powershell
-
     # Install Hyper-V in SEA-SVR1 and SEA-SVR2
 
     $seaServers = ('SEA-SVR1', 'SEA-SVR2')
     foreach ($sea in $seaServers){
-    Install-WindowsFeature -ComputerName $sea -Name Hyper-V -IncludeAllSubFeature -IncludeManagementTools -Restart
+        Install-WindowsFeature -ComputerName $sea -Name Hyper-V -IncludeAllSubFeature -IncludeManagementTools -Restart
     }
 
-
     # Create credentials for SEA-SVR1 and SEA-SVR2
-    
+
     #$cred=Get-Credential 
 
     $password = ConvertTo-SecureString "Pa55w.rd" -AsPlainText -Force
