@@ -276,7 +276,7 @@ has_children: false
 
 ## Module 06: High Availablity in Windows Server
 
--- **Validate and create a failover cluster**
+- **Validate and create a failover cluster**
 
     ```powershell
     Install-WindowsFeature -ComputerName SEA-SVR2 -Name Failover-Clustering -IncludeManagementTools
