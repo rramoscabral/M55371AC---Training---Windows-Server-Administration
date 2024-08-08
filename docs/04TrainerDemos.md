@@ -363,6 +363,8 @@ has_children: false
 
     Get-VMReplication
 
+    Set-VMReplication -Reverse -VMName SEA-CORE1 -computername SEA-SVR2.contoso.com
+
     ```
 
 
@@ -382,7 +384,9 @@ has_children: false
 
     Get-ADUser -Filter {Enabled -eq $true -and PasswordNeverExpires -eq $true}
 
-    $days = (Get-Date).Adddays(-90) Get-ADUser -Filter {LastLogonDate -lt $days -and enabled -eq $true} -Properties LastLogonDate
+    $days = (Get-Date).Adddays(-90) 
+    
+    Get-ADUser -Filter {LastLogonDate -lt $days -and enabled -eq $true} -Properties LastLogonDate
 
     #In this demo no accounts will be returned.
     ```

@@ -99,7 +99,7 @@ has_children: false
 | --- | --- |
 | Planning for failover clustering implementation | - [Failover clustering hardware requirements and storage options](https://learn.microsoft.com/en-us/windows-server/failover-clustering/clustering-requirements) <br> - [What's New in Failover Clustering in Windows Server 2012 R2](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/dn265972(v=ws.11)) <br> - [Understanding cluster and pool quorum](https://learn.microsoft.com/en-us/azure-stack/hci/concepts/quorum) |
 | Creating and configuring failover cluster | - [Configure and manage quorum](https://learn.microsoft.com/en-us/windows-server/failover-clustering/manage-cluster-quorum)
-| Overview of stretch clusters | |
+| Overview of stretch clusters | - [Storage Replica Overview](https://learn.microsoft.com/en-us/windows-server/storage/storage-replica/storage-replica-overview) <br> - [Stretch Cluster Replication Using Shared Storage](https://learn.microsoft.com/en-us/windows-server/storage/storage-replica/stretch-cluster-replication-using-shared-storage) |
 | High availability and disaster recovery solutions with Hyper-V VMs | |
 
 
@@ -110,8 +110,8 @@ has_children: false
 
 | Lessons | References | 
 | --- | --- |
-| Hyper-V Replica | |
-|Backup and restore infrastructure in Windows Server | |
+| Hyper-V Replica |  - [Set up Hyper-V Replica](https://learn.microsoft.com/en-us/windows-server/virtualization/hyper-v/manage/set-up-hyper-v-replica) |
+| Backup and restore infrastructure in Windows Server | - [How to use the backup feature to back up and restore data](https://learn.microsoft.com/en-us/previous-versions/troubleshoot/windows-server/use-backup-feature-back-up-restore-data) <br> - [Backup and Storage troubleshooting documentation for Windows Server](https://learn.microsoft.com/en-us/troubleshoot/windows-server/backup-and-storage/backup-and-storage-overview) |
 
 
 

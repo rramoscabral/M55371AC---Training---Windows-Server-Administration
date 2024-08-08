@@ -10,13 +10,6 @@ lab:
 ---
 
 
-
----
-lab:
-    title: 'Lab: Migrating server workloads'
-    module: 'Module 12: Upgrade and migration in Windows Server'
----
-
 # Lab: Migrating server workloads
 
 ## Scenario
