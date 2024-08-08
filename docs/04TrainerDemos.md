@@ -286,7 +286,9 @@ has_children: false
 
     New-Cluster -Name WFC2022 -Node sea-svr2 -StaticAddress 172.16.10.125 
 
-    Add-ClusterNode -Name SEA-SVR3 
+    Add-ClusterNode -Name SEA-SVR3 -Cluster WFC2022
+
+    Get-ClusterNode -Cluster WFC2022
     ```
 
     <br>
