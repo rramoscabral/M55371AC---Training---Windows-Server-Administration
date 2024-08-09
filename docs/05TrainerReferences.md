@@ -50,8 +50,8 @@ has_children: false
 
 | Lessons | References | 
 | --- | --- |
-| Deploying and managing DHCP |  |
-| Deploying and managing DNS service | - [PowerShell DnsServer](https://docs.microsoft.com/en-us/powershell/module/dnsserver) |
+| Deploying and managing DHCP | - [Deploy and manage DHCP](https://learn.microsoft.com/en-us/training/modules/deploy-manage-dynamic-host-configuration-protocol/) <br> - [Quickstart: Install and configure DHCP Server](https://learn.microsoft.com/en-us/windows-server/networking/technologies/dhcp/quickstart-install-configure-dhcp-server) |
+| Deploying and managing DNS service | - [PowerShell DnsServer](https://docs.microsoft.com/en-us/powershell/module/dnsserver) <br> - [Quickstart: Install and configure DNS Server](https://learn.microsoft.com/en-us/windows-server/networking/dns/quickstart-install-configure-dns-server?tabs=powershell) |
 | Deploying and managing IPAM | - [IP Address Management (IPAM)](https://learn.microsoft.com/en-us/windows-server/networking/technologies/ipam/ipam-top) |
 | Remote Access Services in Windows Server | - [Remote Server Administration Tools](https://learn.microsoft.com/en-us/windows-server/remote/remote-server-administration-tools) <br> - [Remote Desktop Services overview in Windows Server](https://learn.microsoft.com/en-us/windows-server/remote/remote-desktop-services/remote-desktop-services-overview) <br> - [Remote access overview](https://learn.microsoft.com/en-us/windows-server/remote/remote-access/remote-access) |
 
@@ -135,8 +135,8 @@ has_children: false
 | Lessons | References | 
 | --- | --- |
 | Overview of RDS | - [Remote Desktop Services overview in Windows Server](https://learn.microsoft.com/en-us/windows-server/remote/remote-desktop-services/remote-desktop-services-overview) <br> - [Supported configurations for Remote Desktop Services](https://learn.microsoft.com/en-us/windows-server/remote/remote-desktop-services/rds-supported-config) <br> - [Windows Enterprise multi-session FAQ](https://learn.microsoft.com/en-us/azure/virtual-desktop/windows-multisession-faq) <br> - [Azure Virtual Desktops (AVD)](https://learn.microsoft.com/en-us/azure/virtual-desktop/) |
-| Configuring a session-based desktop deployment |  |
-| Overview of personal and pooled virtual desktops | - [Manage Virtual Desktops](https://learn.microsoft.com/en-us/windows-server/remote/multipoint-services/manage-virtual-desktops)<br> - [Configure Microsoft Defender Antivirus on a remote desktop or virtual desktop infrastructure environment](https://learn.microsoft.com/en-us/defender-endpoint/deployment-vdi-microsoft-defender-antivirus) |
+| Configuring a session-based desktop deployment | - [Implement remote access](https://learn.microsoft.com/en-us/training/modules/implement-remote-access/) <br> - [Use personal session desktops with Remote Desktop Services](https://learn.microsoft.com/en-us/windows-server/remote/remote-desktop-services/rds-personal-session-desktops)  |
+| Overview of personal and pooled virtual desktops |  - [Manage Virtual Desktops](https://learn.microsoft.com/en-us/windows-server/remote/multipoint-services/manage-virtual-desktops)<br> - [Configure Microsoft Defender Antivirus on a remote desktop or virtual desktop infrastructure environment](https://learn.microsoft.com/en-us/defender-endpoint/deployment-vdi-microsoft-defender-antivirus) <br> - [Optimizing Windows configuration for VDI desktops](https://learn.microsoft.com/en-us/windows-server/remote/remote-desktop-services/remote-desktop-services-vdi-optimize-configuration) |
 
 
 
@@ -147,7 +147,7 @@ has_children: false
 
 | Lessons | References | 
 | --- | --- |
-| Implementing VPNs | |
+| Implementing VPNs | - [Virtual Private Networking (VPN)](https://learn.microsoft.com/en-us/windows-server/remote/remote-access/vpn/vpn-top) |
 | Implementing Always On VPN | - [About Always On VPN](https://learn.microsoft.com/en-us/windows-server/remote/remote-access/overview-always-on-vpn) <br> - [Tutorial: Deploy Always On VPN - Set up infrastructure for Always On VPN](https://learn.microsoft.com/en-us/Windows-server/remote/remote-access/tutorial-aovpn-deploy-setup) |
 | Implementing Network Policy Server (NPS) | | 
 | Implementing Web Server in Windows Server | - [Internet Information Services (IIS)](https://www.iis.net/) <br> - [New Features Introduced in IIS 10.0](https://learn.microsoft.com/en-us/iis/get-started/whats-new-in-iis-10/new-features-introduced-in-iis-10) <br> - [Internet Information Services (IIS) lifeycle](https://learn.microsoft.com/en-us/lifecycle/products/internet-information-services-iis) |
