@@ -25,9 +25,9 @@ After completing this lab, you'll be able to:
 - Create and configure VMs.
 - Install and configure containers.
 
-## Lab Setup
+## Estimated Time: 60 minutes
 
-**Estimated Time:** 60 minutes
+## Lab Setup
 
 **Virtual Machines**: WS-011T00A-SEA-DC1, WS-011T00A-SEA-ADM1, and WS-011T00A-SEA-SVR1
 

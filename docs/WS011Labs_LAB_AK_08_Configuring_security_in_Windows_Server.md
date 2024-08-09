@@ -23,7 +23,7 @@ After completing this lab, you will be able to:
 - Locate problematic user accounts.
 - Implement and verify LAPS (Local Administrator Password Solution)
 
-## Estimate time: 40 minutes
+## Estimated time: 40 minutes
 
 ## Lab setup
 

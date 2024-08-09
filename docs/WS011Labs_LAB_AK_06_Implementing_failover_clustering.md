@@ -26,7 +26,7 @@ After completing this lab, you'll be able to:
 - Deploy and configure a highly available file server on the failover cluster.
 - Validate the deployment of the highly available file server.
 
-## Estimated time: **60 minutes**
+## Estimated time: 60 minutes
 
 ## Lab setup
 

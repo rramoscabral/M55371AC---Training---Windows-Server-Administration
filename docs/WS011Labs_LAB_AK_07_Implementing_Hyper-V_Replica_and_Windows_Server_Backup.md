@@ -22,9 +22,9 @@ After completing this lab, you'll be able to:
 - Configure and implement **Hyper-V Replica**.
 - Configure and implement backup with Windows Server Backup.
 
-## Lab setup
+## Estimated time: 45 minutes
 
-Estimated time: **45 minutes**
+## Lab setup
 
 Virtual machines: **WS-011T00A-SEA-DC1**, **WS-011T00A-SEA-SVR1**, **WS-011T00A-SEA-SVR2**, and **WS-011T00A-SEA-ADM1**
 

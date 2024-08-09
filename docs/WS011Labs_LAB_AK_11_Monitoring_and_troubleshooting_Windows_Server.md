@@ -25,9 +25,11 @@ After completing this lab, you'll be able to:
 - Identify the source of a performance problem.
 - Review and configure centralized event logs.
 
+## Estimated time: 40 minutes
+
 ## Lab setup
 
-Estimated time: **40 minutes**
+
 
 Virtual machines: **WS-011T00A-SEA-DC1**, **WS-011T00A-SEA-ADM1**, and **WS-011T00A-SEA-CL1**
 

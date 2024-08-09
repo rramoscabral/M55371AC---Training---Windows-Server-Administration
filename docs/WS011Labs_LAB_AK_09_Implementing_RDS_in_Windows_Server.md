@@ -29,9 +29,9 @@ After completing this lab, you’ll be able to:
 - Configure session collection settings and use RDS
 - Configure virtual desktop template
 
-## Lab Setup
+## Estimated Time: 90 minutes
 
-**Estimated Time:** 90 minutes
+## Lab Setup
 
 For this lab, you'll use the following VMs:
 

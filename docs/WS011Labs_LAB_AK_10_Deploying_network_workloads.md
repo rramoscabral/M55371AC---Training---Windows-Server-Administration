@@ -25,9 +25,11 @@ After completing this lab, you’ll be able to:
 - Implement a VPN (virtual private network) solution
 - Deploy and configure a web server
 
+## Estimated time: 60 minutes
+
 ## Lab setup
 
-**Estimated time:** 60 minutes
+
 
 For this lab, you will use the following virtual machines:
 

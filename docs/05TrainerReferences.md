@@ -149,7 +149,7 @@ has_children: false
 | --- | --- |
 | Implementing VPNs | - [Virtual Private Networking (VPN)](https://learn.microsoft.com/en-us/windows-server/remote/remote-access/vpn/vpn-top) |
 | Implementing Always On VPN | - [About Always On VPN](https://learn.microsoft.com/en-us/windows-server/remote/remote-access/overview-always-on-vpn) <br> - [Tutorial: Deploy Always On VPN - Set up infrastructure for Always On VPN](https://learn.microsoft.com/en-us/Windows-server/remote/remote-access/tutorial-aovpn-deploy-setup) |
-| Implementing Network Policy Server (NPS) | | 
+| Implementing Network Policy Server (NPS) | - [Network Policy Server (NPS)](https://learn.microsoft.com/en-us/windows-server/networking/technologies/nps/nps-top) | 
 | Implementing Web Server in Windows Server | - [Internet Information Services (IIS)](https://www.iis.net/) <br> - [New Features Introduced in IIS 10.0](https://learn.microsoft.com/en-us/iis/get-started/whats-new-in-iis-10/new-features-introduced-in-iis-10) <br> - [Internet Information Services (IIS) lifeycle](https://learn.microsoft.com/en-us/lifecycle/products/internet-information-services-iis) |
 
 
