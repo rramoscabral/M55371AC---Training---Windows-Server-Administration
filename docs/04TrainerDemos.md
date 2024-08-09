@@ -498,13 +498,38 @@ has_children: false
 - **Install RDS using Windows Server PowerShell**
 
     ```powershell
-    Enter-PSSession -Session SEA-DC1
+    # Use SEA-DC1 locally
     
     $SVR="SEA-RDS1.contoso.com"
 
     New-RDSessionDeployment -ConnectionBroker $SVR -WebAccessServer $SVR -SessionHost $SVR
 
     # The installation take approximately 5 minutes
+    ```
+
+    <br/>
+
+- **Create and configure a session collection using Windows PowerShell**
+
+    ```powershell
+        ```powershell
+    # Use SEA-RDS1
+    
+    New-RDSessionCollection –CollectionName Demo –SessionHost SEA-RDS1.Contoso.com –CollectionDescription “This Collection is for Demo purposes” –ConnectionBroker SEA-RDS1.Contoso.com
+
+    # Client Device Redirection Options for Demo RDS session collection
+    Get-RDSessionCollectionConfiguration –CollectionName Demo –Client | Format-List
+
+    Set-RDSessionCollectionConfiguration –CollectionName Demo –ClientDeviceRedirectionOptions PlugAndPlayDevice, SmartCard,Clipboard,LPTPort,Drive
+
+    Get-RDSessionCollectionConfiguration –CollectionName Demo –Client | Format-List
+
+    # https://SEA-RDS1.Contoso.com/rdweb
+
+    ```
+
+    <br/>
+
     ```
 
     <br/>
