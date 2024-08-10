@@ -162,7 +162,7 @@ has_children: false
 
 | Lessons | References | 
 | --- | --- |
-| Overview of Windows Server monitoring tools | - [Windows commands prompt](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands) <br> -  [Sysinternals](https://learn.microsoft.com/en-us/sysinternals/) |
+| Overview of Windows Server monitoring tools | - [Windows commands prompt](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands) <br> -  [Sysinternals](https://learn.microsoft.com/en-us/sysinternals/) <br> - [System Insights overview](https://learn.microsoft.com/en-us/windows-server/manage/system-insights/overview) |
 | Using Performance Monitor | |
 | Monitoring event logs for troubleshooting | |
 

@@ -29,8 +29,6 @@ After completing this lab, you'll be able to:
 
 ## Lab setup
 
-
-
 Virtual machines: **WS-011T00A-SEA-DC1**, **WS-011T00A-SEA-ADM1**, and **WS-011T00A-SEA-CL1**
 
 User name: **Contoso\Administrator**

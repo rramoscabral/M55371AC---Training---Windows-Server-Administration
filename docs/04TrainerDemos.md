@@ -530,10 +530,6 @@ has_children: false
 
     <br/>
 
-    ```
-
-    <br/>
-
 <br/>
 
 ---
