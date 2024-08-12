@@ -581,6 +581,18 @@ has_children: false
     <br>
 
 
+- **Upgrade the domain and forest functional level**
+
+    ```powershell
+    Set-ADDomainMode -identity adatum.com -DomainMode Windows2016Domain
+
+    Set-ADForestMode -Identity adatum.com -ForestMode Windows2016Forest
+    ```
+    
+    <br>
+
+
+
 
 - **Use Windows Server Migration Tools**
 
