@@ -562,7 +562,6 @@ has_children: false
 - **Install secondary domain controller**
 
     ```powershell
-
     # LON-DC1 verify domain
     Dcdiag /v 
 
@@ -622,7 +621,6 @@ has_children: false
 
     # Receives shares and data from the source server.
     Receive-SmigServerData 
- 
     ```
 
     <br/>
