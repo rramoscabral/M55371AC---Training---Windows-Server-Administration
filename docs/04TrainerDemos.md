@@ -559,6 +559,29 @@ has_children: false
 ## Module 12: Upgrade and migration in Windows Server
 
 
+- **Install secondary domain controller**
+
+    ```powershell
+
+    # LON-DC1 verify domain
+    Dcdiag /v 
+
+    # LON-DC1 verify replication
+    repadmin /showrepl
+    repadmin /replsum 
+
+
+    # LON-FS2
+    Install-WindowsFeature -Name AD-Domain-Services -IncludeManagementTools
+
+
+    Install-ADDSDomainController -CreateDnsDelegation:$false -InstallDns:$true -DomainName "adatum.com" -SiteName "Default-First-Site-Name" -ReplicationSourceDC "lon-dc1.adatum.com" -DatabasePath "C:\Windows\NTDS" -LogPath "C:\Windows\NTDS" -SysvolPath "C:\Windows\SYSVOL" -Force:$true
+    ```
+    
+    <br>
+
+
+
 - **Use Windows Server Migration Tools**
 
     ```powershell
