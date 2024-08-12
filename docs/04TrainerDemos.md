@@ -552,3 +552,45 @@ has_children: false
 
 
     <br/>
+
+
+
+
+
+## Module 12: Upgrade and migration in Windows Server
+
+
+- **Use Windows Server Migration Tools**
+
+    ```powershell
+    Install-WindowsFeature Migration -IncludeManagementTools
+
+    Add-PSSnapin Microsoft.Windows.ServerManager.Migration
+
+
+    # https://learn.microsoft.com/en-us/powershell/module/servermigration/?view=winserver2012r2-ps
+
+
+    # Gets the set of all Windows features that can be migrated from the local server or from a migration store.
+    Get-SmigServerFeature
+
+
+    # Exports selected Windows features and operating system settings from the local computer, and stores them in a migration store.
+    Export-SmigServerSetting
+
+
+    # Imports selected Windows features, and operating system settings from a migration store, and applies them to the local computer.
+    Import-SmigServerSetting
+
+
+    # Sends shares and data from the source server to a destination server.
+    Send-SmigServerData
+
+    # Receives shares and data from the source server.
+    Receive-SmigServerData 
+ 
+    ```
+
+    <br/>
+
+<br/>
