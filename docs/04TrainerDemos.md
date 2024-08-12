@@ -512,7 +512,6 @@ has_children: false
 - **Create and configure a session collection using Windows PowerShell**
 
     ```powershell
-        ```powershell
     # Use SEA-RDS1
     
     New-RDSessionCollection –CollectionName Demo –SessionHost SEA-RDS1.Contoso.com –CollectionDescription “This Collection is for Demo purposes” –ConnectionBroker SEA-RDS1.Contoso.com
