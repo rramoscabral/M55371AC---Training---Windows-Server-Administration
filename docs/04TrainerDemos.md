@@ -583,8 +583,15 @@ has_children: false
 - **Upgrade the domain and forest functional level**
 
     ```powershell
+    # Domain
+    (Get-ADDomain -Server lon-dc1).DomainMode
+
     Set-ADDomainMode -identity adatum.com -DomainMode Windows2016Domain
 
+
+    # Forest
+    (Get-ADForest -Server LON-DC1).ForestMode
+    
     Set-ADForestMode -Identity adatum.com -ForestMode Windows2016Forest
     ```
     
