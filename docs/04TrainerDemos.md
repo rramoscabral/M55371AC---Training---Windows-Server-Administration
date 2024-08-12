@@ -569,10 +569,8 @@ has_children: false
     repadmin /showrepl
     repadmin /replsum 
 
-
     # LON-FS2
     Install-WindowsFeature -Name AD-Domain-Services -IncludeManagementTools
-
 
     Install-ADDSDomainController -CreateDnsDelegation:$false -InstallDns:$true -DomainName "adatum.com" -SiteName "Default-First-Site-Name" -ReplicationSourceDC "lon-dc1.adatum.com" -DatabasePath "C:\Windows\NTDS" -LogPath "C:\Windows\NTDS" -SysvolPath "C:\Windows\SYSVOL" -Force:$true
     ```
@@ -591,7 +589,7 @@ has_children: false
 
     # Forest
     (Get-ADForest -Server LON-DC1).ForestMode
-    
+
     Set-ADForestMode -Identity adatum.com -ForestMode Windows2016Forest
     ```
     
@@ -607,21 +605,16 @@ has_children: false
 
     Add-PSSnapin Microsoft.Windows.ServerManager.Migration
 
-
     # https://learn.microsoft.com/en-us/powershell/module/servermigration/?view=winserver2012r2-ps
-
 
     # Gets the set of all Windows features that can be migrated from the local server or from a migration store.
     Get-SmigServerFeature
 
-
     # Exports selected Windows features and operating system settings from the local computer, and stores them in a migration store.
     Export-SmigServerSetting
 
-
     # Imports selected Windows features, and operating system settings from a migration store, and applies them to the local computer.
     Import-SmigServerSetting
-
 
     # Sends shares and data from the source server to a destination server.
     Send-SmigServerData
