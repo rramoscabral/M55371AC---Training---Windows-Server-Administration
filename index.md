@@ -25,7 +25,18 @@ The course **M55371AC: Windows Server Administration** is intended for DevOps pr
 
 **Learning objectives**
 
-Students will learn how to plan for DevOps, use source control, scale Git for an enterprise, consolidate artifacts, design a dependency management strategy, manage secrets, implement continuous integration, implement a container build strategy, design a release strategy, set up a release management workflow, implement a deployment pattern, and optimize feedback mechanisms.
+Students will learn how to:
+- Understand and describe the various Windows Server editions, deployment methods, and activation techniques.
+- Administer Windows Server Core using command line and remote management tools.
+- Implement and manage identity services with Active Directory Domain Services (AD DS) and integrate with Azure AD.
+- Configure Group Policy Objects and manage policies effectively across a Windows Server environment.
+- Deploy and manage key network infrastructure services such as DHCP, DNS, and IPAM along with Remote Access Services.
+- Configure file servers, implement Storage Spaces for better disk usage, and set up active Data Deduplication.
+- Implement and manage Hyper-V virtual machines and containers, understand virtualization security enhancements like shielded VMs.
+- Set up and administer high availability features including failover clustering and stretch clusters in Windows Server.
+- Understand and perform disaster recovery methods using Hyper-V Replica, Azure Site Recovery, and Windows Server Backup.
+- Harden Windows Server security settings, manage credential protection, and ensure secure SMB traffic.
+
 
 <br/>
 
