@@ -110,6 +110,7 @@ Students will learn how to:
 
 **Microsoft Windows Server**
 - [AZ-801: Configuring Windows Server Hybrid Advanced Services](https://az801.rramoscabral.com)
+- [M55371AC: Windows Server Administration](https://m55371.rramoscabral.com/)
 
 
 <br/>
